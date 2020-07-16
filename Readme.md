@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [наталья](https://up.htmlacademy.ru/adaptive/20/user/1198927).
-* Наставник: `Неизвестно`.
+* Наставник: Виктория Никитина
 
 ---
 
