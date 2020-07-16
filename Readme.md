@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [наталья](https://up.htmlacademy.ru/adaptive/20/user/1198927).
-* Наставник: Виктория Никитина
+* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273)
 
 ---
 
@@ -12,7 +12,7 @@
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.tra vis.yml`, `package-lock.json`, `package.json`._
 
 ---
 
