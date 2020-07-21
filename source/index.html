@@ -4,100 +4,212 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page">
+       <header class="page__header header">
+         <a class="header__logo header-logo" href="">
+          <img class="header-logo__img" src="" alt="logo" width="" height="">
+        </a>
+          <button class="header__btn-menu-open btn-gamb">
+            <em class="btn-gamb__line"></em>
+            <em class="btn-gamb__line"></em>
+            <em class="btn-gamb__line"></em>
+          </button>
+          <nav class="header__nav">
+            <ul class="header-list">
+              <li class="header-list__item">
+                <a href="" class="header-list__link">Главная</a>
+              </li>
+               <li class="header-list__item">
+                <a href="" class="header-list__link">Фотографии</a>
+              </li>
+               <li class="header-list__item">
+                <a href="" class="header-list__link">Конкурс</a>
+              </li>
+               <li class="header-list__item">
+                <a href="" class="header-list__link">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+         </header>
+      <main class="page__main main">
+        <section class="main__promo promo">
+         <h1 class="promo__header">Взгляните на жизнь иначе</h1>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-     <header>
-        <nav>
-          <a href=""><img src="" alt="logo" width="" height=""></a>
-          <button class="button"></button>
-       </nav>
-       <div class="">
-         <h1>Взгляните на жизнь иначе</h1>
-           </div>
-             <a href="">скачать приложение</a>
-             <ul class="netlist">
-               <li>
-                  <a href=""><img src="" alt="apple" width="" height="" ></a>
+             <a href="" class="promo__link">скачать приложение</a>
+             <ul class="promo-socials-list promo__socials">
+               <li class="promo-socials-list__item">
+                  <a href="" class="promo-socials-list__link promo-socials-list__link--apple">
+                    <span class="visually-hidden">playmarket apple</span>
+                  </a>
                </li>
-               <li>
-                   <a href=""><img src="" alt="android" width="" height=""></a>
+                <li class="promo-socials-list__item">
+                  <a href="" class="promo-socials-list__link promo-socials-list__link--android">
+                    <span class="visually-hidden">playmarket android</span>
+                  </a>
                </li>
-               <li>
-                   <a href=""><img src="" alt="windows" width="" height=""></a>
+                <li class="promo-socials-list__item">
+                  <a href="" class="promo-socials-list__link promo-socials-list__link--windows">
+                    <span class="visually-hidden">playmarket windows</span>
+                  </a>
                </li>
              </ul>
-          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </p>
-     </header>
-     <main>
-        <p>Устали от серости мегаполиса?</p>
-        <p> Нам есть, что вам предложить!</p>
-        <section>
-          <h2>Поднимает настроение</h2>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </p>
         </section>
-        <section>
-          <h2>Меняет мир вокруг </h2>
-          <p> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </section>
-        <section>
-          <h2> Заводит новых друзей </h2>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
-        </section>
-        <img src="" alt="" width="" height="">
-        <div>
-          <h3>Николай Петров</h3>
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <ul class="pointlist"></ul>
-        <div>
-          <div>
-            <img src="" alt="ribbon" width="" height="">
-            <p>стандарт</p>
-            <span>3.99</span>
-            <span>USD</span>
-          </div>
-          <form>
-             <input type="checkbox" name="">
-             <input type="checkbox" name="">
-            <input type="checkbox" name="">
-          </form>
-          <ul class="pointlist">
-
-          </ul>
-        </div>
-        <div>
-          <p>Остались вопросы? Свяжитесь с нами!</p>
-          <ul>
-            <li>
-              <span>Звоните:</span> <a href="">+7 (812) 555-66-66</a>
-            </li>
-            <li>
-              <span>Пишите:</span> <a href="">mail@htmlacademy.ru</a>
-            </li>
-            <li> <span>Приезжайте в гости:</span><a href="">ул. Большая Конюшенная, 19/8</a>
-            </li>
-          </ul>
-        </div>
-        <img src="" alt="map" width="" height="" >
-     </main>
-     <footer>
-      <div>
-        <img src="" alt="" >
-        <a href=""><img src=""></a>
-      </div>
-      <ul class="sociallist">
-        <li><a href=""><img src=""></a></li>
-         <li><a href=""><img src=""></a></li>
-          <li><a href=""><img src=""></a></li>
+        <section class="main__description description">
+          <p class="description__text">Устали от серости мегаполиса?</p>
+          <p class="description__text"> Нам есть, что вам предложить!</p>
+          <ul class="description__list description-list">
+            <li class="description-list__item">
+             <h2 class="description-list__title">Поднимает настроение</h2>
+             <p class="description-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="description-list__item">
+            <h2 class="description-list__title">Меняет мир вокруг </h2>
+            <p class="description-list__text"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="description-list__item">
+            <h2 class="description-list__title"> Заводит новых друзей </h2>
+            <p class="description-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
+          </li>
+       </ul>
+      </section>
+      <section class="main__review reviews">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+         </li>
+        <li class="reviews__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="reviews__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
       </ul>
-      <div>
+
+        <ul class="reviews__bullits bullits">
+          <li class="bullits__item">
+            <a href="" class="bullits-link bullits-link--active">
+              <span class="visually-hidden">страница 1</span>
+            </a>
+          </li>
+            <li class="bullits__item">
+            <a href="" class="bullits-link">
+              <span class="visually-hidden">страница 2</span>
+            </a>
+          </li>
+            <li class="bullits__item">
+            <a href="" class="bullits-link">
+              <span class="visually-hidden">страница 3</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+        <section class="main__price price">
+          <ul class="price__list">
+          <li class="price__item price__item--hit">
+          <div class="price__header">
+            <h4 class="price__tariff">Cтандарт</h4>
+            <span class="price__cost">3.99 USD</span>
+
+          </div>
+            <ul class="price__components">
+              <li class="price__component price__component--on">Розовый фильтр</li>
+                <li class="price__component price__component--on">Смайлики</li>
+                  <li class="price__component">Комментарии</li>
+            </ul>
+          </li>
+           <li class="price__item price__item--hit">
+          <div class="price__header">
+            <h4 class="price__tariff">Cтандарт</h4>
+            <span class="price__cost">3.99 USD</span>
+
+          </div>
+            <ul class="price__components">
+              <li class="price__component price__component--on">Розовый фильтр</li>
+                <li class="price__component price__component--on">Смайлики</li>
+                  <li class="price__component">Комментарии</li>
+            </ul>
+          </li>
+            <li class="price__item price__item--hit">
+          <div class="price__header">
+            <h4 class="price__tariff">Cтандарт</h4>
+            <span class="price__cost">3.99 USD</span>
+
+          </div>
+            <ul class="price__components">
+              <li class="price__component price__component--on">Розовый фильтр</li>
+                <li class="price__component price__component--on">Смайлики</li>
+                  <li class="price__component">Комментарии</li>
+            </ul>
+          </li>
+          </ul>
+            <ul class="price__bullits bullits">
+              <li class="bullits__item">
+                <a href="" class="bullits-link bullits-link--active">
+                  <span class="visually-hidden">страница 1</span>
+                </a>
+              </li>
+              <li class="bullits__item">
+                 <a href="" class="bullits-link">
+                 <span class="visually-hidden">страница 2</span>
+                 </a>
+              </li>
+              <li class="bullits__item">
+                 <a href="" class="bullits-link">
+                 <span class="visually-hidden">страница 3</span>
+                 </a>
+              </li>
+            </ul>
+       </section>
+        <section class="main__contact contact">
+          <p class="contact__text">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contact__list contact-list">
+            <li class="contact-list__item">
+              <span>Звоните:</span>
+               <a href="">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contact-list__item">
+              <span>Пишите:</span>
+              <a href="">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contact-list__item">
+             <span>Приезжайте в гости:</span>
+             <a href="">ул. Большая Конюшенная, 19/8</a>
+            </li>
+          </ul>
+        </section>
+        <img class="main__img-map img-map" src="" alt="map" width="" height="" >
+     </main>
+     <footer class="page__footer footer">
+      <div class="footer__logo">
+        <span class="visually-hidden">очки</span>
+        <img src="" alt="spectacles" width="" height=""  >
+        <span class="visually-hidden">pink</span>
+        <a href=""><img src="" alt="pink" width="" height=""></a>
+      </div>
+      <ul class="footer__socials-icon-list socials-icon">
+        <li class="socials-icon__item">
+          <span class="visually-hidden">twitter</span>
+          <a href=""><img src="" alt="twitter" width="" height="">
+          </a>
+        </li><li class="socials-icon__item">
+          <span class="visually-hidden">facebook</span>
+          <a href=""><img src="" alt="facebook" width="" height="">
+          </a>
+        </li>
+        <li class="socials-icon__item">
+          <span class="visually-hidden">youtube</span>
+          <a href=""><img src="" alt="youtube" width="" height="">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__rights">
         <span>Разработано</span>
         <img src="" alt="Academy" width="" height=""  >
       </div>
-
-
      </footer>
   </body>
 </html>
