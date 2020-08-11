@@ -1,9 +1,33 @@
 .userfiltr-form {
-  display: flex;
-  flex-direction: column;
+
 }
 .userfiltr-form__label {
+  position: relative;
   font-family: @norm;
   font-size: 18px;
   color: @grey;
+  display: block;
+  text-align: left;
+  padding-left: 79px;
+  margin-top: 47px;
+}
+input[type="checkbox"] + .userfiltr-form__label::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 27px;
+  height: 23px;
+  background-color: red;
+
+}
+input[type="checkbox"]:checked + .userfiltr-form__label::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 27px;
+  height: 23px;
+  background-color: blue;
+
 }

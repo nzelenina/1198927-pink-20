@@ -1,0 +1,27 @@
+.components__item {
+  width: 276px;
+  position: relative;
+  min-height: 65px;
+  border-bottom: 2px solid @light-grey;
+}
+.components__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+}
+.components__item--on::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+
+}

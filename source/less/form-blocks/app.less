@@ -1,10 +1,46 @@
 .app {
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
+
 }
 .app__text {
   font-size: 14px;
   font-family: @norm;
   color: @purp;
+  padding: 0 20px 0 20px;
+}
+.app__label {
+  font-family: @norm;
+  font-size: 18px;
+  color: @grey;
+  display: block;
+  margin-top: 62px;
+  padding-left: 90px;
+text-align: left;
+
+  position: relative;
+}
+input[type="radio"] + .app__label::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 22px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+
+
+}
+input[type="radio"]:checked + .app__label::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+
+  background-color: #000000;
+
 }

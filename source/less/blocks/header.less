@@ -1,15 +1,30 @@
 .header {
-  background: #283645;
-  position: relative;
-  font-family: opensans;
+    position: relative;
+    margin-bottom: -66px;
 
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 66px;
+    font-family: opensans;
 }
-.header__btn-menu-open {
-  position: absolute;
-  top: 15px;
-  right: 20px;
+.header--nav-opened {
+  background: #283645;
 }
-.header__logo{
+.header__nav {
+  height: 66px;
+  width: 100%;
   position: absolute;
-  left: 20px;
+  top: 0;
+  left: 0;
+}
+
+
+.header--nav-opened  .header__nav{
+ position: relative;
+  width: 100%;
+height: auto;
+
+
 }

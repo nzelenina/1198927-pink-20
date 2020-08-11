@@ -1,3 +1,22 @@
+.main__review {
+position: relative;
+bottom: 50px;
+z-index: 2;
+  background-color: #ffffff;
+}
+.reviews__list {
+  z-index: 2;
+ display: flex;
+ flex-direction: row;
+
+ margin: 0 auto;
+ margin-bottom: 34px;
+ padding: 0;
+
+}
+.reviews__item {
+  display: none;
+}
 .reviews__title {
    font-family: @bold;
   font-size: 18px;
@@ -7,4 +26,31 @@
   font-family: @norm;
   font-size: 14px;
   color: @grey;
+  line-height: 30px;
+  padding: 0 10px;
 }
+.btn-review-1:checked ~ .reviews__list .review-1,
+.btn-review-2:checked ~ .reviews__list .review-2,
+.btn-review-3:checked ~ .reviews__list .review-3 {
+display: block;
+}
+.reviews__slider-control label{
+
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: @grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-review-1:checked ~ .reviews__slider-control label[for="btn-review-1"],
+.btn-review-2:checked ~ .reviews__slider-control label[for="btn-review-2"],
+.btn-review-3:checked ~ .reviews__slider-control label[for="btn-review-3"]{
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border: 3px solid @grey;
+  border-radius: 50%;
+
+}
+
