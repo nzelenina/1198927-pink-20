@@ -1,24 +1,79 @@
-
-
- .promo__header {
- background-image: url("../img/bg-back-mobile@1x.jpg");
+.promo {
+  position: relative;
+   min-height: 600px;
+   background-color: @grey;
+   background-image: url("../img/bg-back-mobile@1x.jpg");
+   background-repeat: no-repeat;
+  @media (min-width: @tab-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
+   @media (min-width: @desk-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+}
+.promo__title::after {
+  content: "";
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  width: 270px;
+  height: 270px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  @media (min-width: @tab-width) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    width: 660px;
+    height: 545px;
+    left: 70px;
+  }
+}
 .promo__screen {
-  background-color: @screengrey;
+  margin-top: 100px;
 }
 .promo__title {
   font-size: 24px;
   font-family: @light;
   font-weight: 300;
   color: @white;
+  margin-top: 0;
+  width: 300px;
+  min-height: 300px;
+  @media (min-width: @tab-width) {
+     font-size: 40px;
+
+}
 }
 .promo__link {
+  display: block;
+  width: 280px;
+  height: 40px;
+  border-radius: 29px;
+  border: 3px solid #FFFFFF;
   color: #ffffff;
+  padding-top: 15px;
+
+}
+
+.promo__link:hover {
+  background-color: #ffffff;
+  color: @purp;
+}
+.promo__link:active{
+  background-color: #ffffff;
+  color: @purp;
+  opacity: 0.3;
 }
 .promo__text {
+  margin-top: 70px;
   font-size: 14px;
   font-family: @light;
   font-weight: 300;
   color: @white;
+  width: 280px;
+  height: 34px;
+   @media (min-width: @tab-width) {
+     font-size: 18px;
+
+}
 }
 

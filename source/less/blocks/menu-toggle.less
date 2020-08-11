@@ -1,0 +1,82 @@
+/*.logo {
+  width: 100%;
+  min-height: 69px;
+display: flex;
+flex-direction: row;
+  background-color: red;
+
+}
+/*.logo-link {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+
+}
+/*.logo-link::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height:50px;
+  background-image: url('../img/logo-pink-white-mobile.svg');
+  background-repeat: no-repeat;
+  @media (min-width: @tab-width){
+   width: 145px;
+  height:40px;
+  background-image: url('../img/logo-pink-white-tablet.svg');
+  background-repeat: no-repeat;
+  }
+  @media (min-width: @desk-width){
+  width: 147px;
+  height: 40px;
+  background-image: url('../img/logo-pink-white-desktop.svg');
+  background-repeat: no-repeat;
+  }
+}*/
+
+
+.menu-toggle, {
+  display: block;
+  padding:0px;
+  width: 50px;
+  height: 24px;
+  background: inherit;
+  border:none;
+  position: absolute;
+  bottom: 19px;
+  right: 20px;
+  cursor: pointer;
+  @media (min-width: @desk-width){
+    display: none;
+  }
+}
+ .menu-toggle::before {
+  position: absolute;
+  content: "";
+  top:0px;
+  right: 0px;
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+.header--nav-opened .menu-toggle {
+ &::before,
+ &::after {
+     top: 10px;
+    right: 0px;
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+&::after {
+  transform: rotate(45deg);
+}
+&::before {
+    transform: rotate(-45deg);
+ }
+}

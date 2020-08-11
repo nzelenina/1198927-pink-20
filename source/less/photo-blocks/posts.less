@@ -1,8 +1,30 @@
+.posts {
+ /* display: flex;
+flex-wrap: wrap;*/
+}
 .posts__item {
   background-color: #f2f2f2;
+display: block;
+position: relative;
+
 }
 .posts__text {
   font-family: @norm;
   font-size: 14px;
   color: @grey;
+}
+.posts__item--photo-day picture {
+  width: 100%;
+
+}
+.posts__item--photo-day::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: red;
 }
