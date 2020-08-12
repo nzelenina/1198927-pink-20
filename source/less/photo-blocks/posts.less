@@ -1,7 +1,4 @@
-.posts {
- /* display: flex;
-flex-wrap: wrap;*/
-}
+
 .posts__item {
   background-color: #f2f2f2;
 display: block;
@@ -27,4 +24,15 @@ position: relative;
   right: 0;
 
   background-color: red;
+}
+ @media ( min-width: @tab-width){
+  .posts {
+ display: flex;
+flex-wrap: wrap;
+}
+}
+ @media ( min-width: @desk-width){
+  .posts__item {
+  width: 50%;
+ }
 }
