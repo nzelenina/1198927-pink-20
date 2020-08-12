@@ -1,12 +1,15 @@
 .posts {
- /* display: flex;
-flex-wrap: wrap;*/
+  @media ( min-width: @tab-width){
+    display: flex;
+flex-wrap: wrap;
 }
 .posts__item {
   background-color: #f2f2f2;
 display: block;
 position: relative;
-
+ @media ( min-width: @desk-width){
+  width: 50%;
+ }
 }
 .posts__text {
   font-family: @norm;
