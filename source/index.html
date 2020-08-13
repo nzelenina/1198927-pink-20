@@ -64,19 +64,33 @@
           <p class="description__text"> Нам есть, что вам предложить!</p>
           <ul class="description__list description-list">
             <li class="description-list__item">
-               <img class="description__img-desk" src="./img/iPhone-screen-mobile@1x.png" alt="экран телефона" width="157px" height="320px">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/iPhone-screen-1-tablet@1x.png 1x, iPhone-screen-1-tablet@2x.png 2x">
+                <source media="(min-width: 1200px)" srcset="img/iPhone-screen-1-desktop@1x.png 1x, iPhone-screen-1-desktop@2x.png 2x">
+
+               <img class="description__img-desk" src="img/iPhone-screen-mobile@1x.png" srcset="img/iPhone-screen-mobile@2x.png 2x" alt="экран телефона" width="157px" height="320px">
+               </picture>
 
              <h2 class="description-list__title">Поднимает настроение</h2>
              <p class="description-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="description-list__item">
+            <picture>
+               <source media="(min-width: 768px)" srcset="img/iPhone-screen-2-tablet@1x.png 1x, iPhone-screen-2-tablet@2x.png 2x">
+                <source media="(min-width: 1200px)" srcset="img/iPhone-screen-2-desktop@1x.png 1x, iPhone-screen-2-desktop@2x.png 2x">
              <img class="description__img-desk" src="./img/iPhone-screen-mobile@1x.png" alt="экран телефона" width="157px" height="320px">
+           </picture>
 
             <h2 class="description-list__title">Меняет мир вокруг </h2>
             <p class="description-list__text"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="description-list__item">
+            <picture>
+                     <source media="(min-width: 768px)" srcset="img/iPhone-screen-3-tablet@1x.png 1x, iPhone-screen-3-tablet@2x.png 2x">
+                <source media="(min-width: 1200px)" srcset="img/iPhone-screen-3-desktop@1x.png 1x, iPhone-screen-3-desktop@2x.png 2x">
+
              <img class="description__img-desk" src="./img/iPhone-screen-mobile@1x.png" alt="экран телефона" width="157px" height="320px">
+           </picture>
 
             <h2 class="description-list__title"> Заводит новых друзей </h2>
             <p class="description-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>

@@ -1,9 +1,83 @@
 .usercontact {
-  display: flex;
-  flex-direction: column;
+
 }
 .usercontact__label {
   font-size: 14px;
   font-family: @norm;
   color: @purp;
+  display: block;
 }
+.usercontact__title{
+  display: none;
+  margin: 0 auto;
+}
+.usercontact__input {
+  font-family: @norm;
+  font-size: 18px;
+}
+@media (min-width: @tab-width) {
+  .usercontact {
+  display: flex;
+  flex-direction: column;
+  min-height: 305px;
+  border: 2px solid  #e5e5e5;
+  margin: 65px 22px 0 22px;
+}
+  .usercontact__title{
+  display: block;
+
+  font-family: @norm;
+  font-size: 14px;
+  color: @purp;
+  position: relative;
+    background-color: #ffffff;
+    width: 260px;
+    top: -10px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+.usercontact__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.usercontact__wrapper-item {
+  display: flex;
+  flex-direction: column;
+}
+.usercontact__input {
+
+  min-height: 59px;
+  padding-left: 20px;
+}
+}
+@media (min-width: @desk-width) {
+  .usercontact__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .usercontact {
+  display: flex;
+  flex-direction: column;
+
+   min-height: 158px;
+  border: 2px solid  #e5e5e5;
+  margin: 65px 22px 0 22px;
+}
+.usercontact__wrapper-item {
+  width: 50%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
