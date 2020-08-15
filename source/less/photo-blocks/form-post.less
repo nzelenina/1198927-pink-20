@@ -2,7 +2,11 @@
   background-color: #f2f2f2;
 
 }
-.form-post__btn,{
+.form-post__buttons {
+display: flex;
+flex-direction: column;
+}
+.form-post__btn {
   font-family: @bold;
   font-size: 18px;
   color: @purp;
@@ -23,4 +27,15 @@ border-radius: 30px;
 box-sizing: border-box;
 border-radius: 30px;
 opacity: 0.1;
+}
+@media (min-width: @tab-width) {
+  .form-post {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: @desk-width) {
+ .form-post__buttons {
+  flex-direction: row;
+ }
 }

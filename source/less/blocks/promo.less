@@ -1,46 +1,52 @@
 .promo {
+
   position: relative;
-   min-height: 600px;
-   background-color: @grey;
-   background-image: url("../img/bg-back-mobile@1x.jpg");
-   background-repeat: no-repeat;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (min-width: @tab-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-  }
-   @media (min-width: @desk-width) {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
-
-}
-.promo__title::after {
+ }
+ }
+.promo::after {
   content: "";
   position: absolute;
-  top: 190px;
-  left: 20px;
+  top: 180px;
+  left: 5px;
   width: 270px;
   height: 270px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
 }
 .promo__screen {
-  margin-top: 100px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+   @media (max-width:@tab-width) {
+    background-color: @grey;
+}
 }
 .promo__title {
+  margin: 0 auto;
   font-size: 24px;
   font-family: @light;
   font-weight: 300;
   color: @white;
   margin-top: 0;
-  width: 300px;
-  min-height: 300px;
+  width: 260px;
+  padding: 0 20px 0 20x;
+  min-height: 348px;
   @media (min-width: @tab-width) {
      font-size: 40px;
-
 }
 }
 .promo__link {
   display: block;
   width: 280px;
   height: 40px;
+  margin: 0 auto;
+  font-family: @bold;
+  font-size: 18px;
   border-radius: 29px;
   border: 3px solid #FFFFFF;
   color: #ffffff;
@@ -68,26 +74,23 @@
 }
 
  @media (min-width: @tab-width) {
-  .promo__title::after {
+  .promo::after {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     width: 660px;
     height: 545px;
     left: 70px;
   }
+  .promo__title {
+    margin-left: 20px;
+  }
+  .promo__link {
+    margin-left: 20px;
+  }
   .promo__text {
     font-size: 18px;
+    margin-bottom: 38px;
   }
-  }
-  /* @media (min-width: @desk-width) {
-     .promo__title::after {
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    width: 660px;
-    height: 545px;
-    left: 70px;
-    }
-    } */
-
-
+}
 
 
 

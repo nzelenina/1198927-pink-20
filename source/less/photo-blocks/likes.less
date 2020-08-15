@@ -1,6 +1,24 @@
+.likes {
+  position: relative;
+}
 .likes__text,
 .likes__number {
   font-size: 12px;
   font-family: @norm;
   color: @purp;
 }
+ @media ( min-width: @tab-width) {
+  .likes {
+    display: flex;
+    flex-direction: row;
+  }
+  .likes__text {
+    order: 1;
+  }
+  .likes__number {
+    order: 2;
+  }
+  .likes__img {
+    order: 3;
+  }
+ }

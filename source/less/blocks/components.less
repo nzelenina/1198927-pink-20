@@ -1,8 +1,16 @@
+.components {
+  border: 2px solid #e5e5e5;
+
+}
 .components__item {
   width: 276px;
   position: relative;
   min-height: 65px;
-  border-bottom: 2px solid @light-grey;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+}
+.components__item:last-child {
+  border-bottom: none;
 }
 .components__item::after {
   content: "";
