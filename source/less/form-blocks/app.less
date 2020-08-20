@@ -1,47 +1,85 @@
 .app {
   background-color: #f2f2f2;
-
+ display: flex;
+ flex-direction: column;
+ position: relative;
 }
 .app__title {
   font-size: 14px;
   font-family: @norm;
   color: @purp;
-  padding: 0 20px 0 20px;
+  text-transform: uppercase;
+  width: 178px;
+  height: 29px;
+  margin: 0 auto;
+  margin-top: 42px;
+  padding-top: 42px;
 }
 .app__label {
   font-family: @norm;
   font-size: 18px;
   color: @grey;
   display: block;
-  margin-top: 62px;
+  margin-top: 16px;
+  margin-bottom: 54px;
   padding-left: 90px;
 text-align: left;
-
   position: relative;
 }
-input[type="radio"] + .app__label::before{
+
+.app__label:last-child {
+  margin-bottom: 54px;
+}
+/*input[type="radio"] + .app__label::before{
   content: "";
   position: absolute;
   top: -10px;
-  left: 22px;
+  left: 22px;*/
+  .app__circle-1 {
   width: 37px;
   height: 37px;
+  position: absolute;
+  bottom: 217px;
+  left: 26px;
   border-radius: 50%;
   border: 2px solid #E5E5E5;
   background-color: #ffffff;
 
+}
+  .app__circle-2 {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 130px;
+  left: 26px;
+  border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
 
 }
-input[type="radio"]:checked + .app__label::before{
-  content: "";
+  .app__circle-3 {
+  width: 37px;
+  height: 37px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 7px;
-  height: 7px;
+  bottom: 46px;
+  left: 26px;
   border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
 
-  background-color: #000000;
+}
+
+input[type="radio"]:checked + .app__label::before{
+
+content: "";
+  position: absolute;
+  top: 6px;
+  left: 41px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: @purp;
 
 }
 @media (min-width: @tab-width) {
@@ -49,10 +87,21 @@ input[type="radio"]:checked + .app__label::before{
     background-color: #ffffff;
     min-height: 295px;
     margin: 0 22px 0 22px;
+    margin-top: 65px;
 
   border: 2px solid  #e5e5e5;
 
   }
+.app__title {
+  width: 368px;
+  height: 38px;
+  background-color: #ffffff;
+  z-index: 1;
+ margin: 0 auto;
+ padding-top: 0;
+ position: relative;
+ top: -10px;
+}
 }
 
 

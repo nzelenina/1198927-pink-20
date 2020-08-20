@@ -18,8 +18,7 @@ input[type="checkbox"] + .userfiltr-form__label::before{
   left: 22px;
   width: 27px;
   height: 23px;
-  background-color: red;
-
+background-color: #ffffff;
 }
 input[type="checkbox"]:checked + .userfiltr-form__label::before{
   content: "";
@@ -28,13 +27,24 @@ input[type="checkbox"]:checked + .userfiltr-form__label::before{
   left: 22px;
   width: 27px;
   height: 23px;
-  background-color: blue;
-
+  background-image: url("../img/tick.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
  @media ( min-width: @tab-width) {
   .userfiltr-form {
 
   }
+  input[type="checkbox"] + .userfiltr-form__label::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 27px;
+  height: 23px;
+background-color: #ffffff;
+border: 2px solid @light-grey;
+}
  }
  @media ( min-width: @desk-width) {
   .userfiltr-form {
