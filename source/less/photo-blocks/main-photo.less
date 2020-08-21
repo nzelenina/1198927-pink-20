@@ -7,22 +7,42 @@
   margin-top: 0px;
   margin: 0 auto;
   padding-top: 102px;
-
   box-sizing: border-box;
-
   color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 }
-.main-photo__text {
+
+.main-photo__text1 {
  font-family: @norm;
   font-size: 14px;
   color: @grey;
   width: 280px;
   height: 70px;
-  margin-top: 60px;
   margin: 0 auto;
-
+   margin-top: 54px;
+   margin-bottom: 54px;
+}
+.main-photo__text2 {
+   font-family: @norm;
+  font-size: 14px;
+  color: @grey;
+  width: 160px;
+  height: 71px;
+  margin: 0 auto;
+   margin-top: 49px;
+   margin-bottom: 52px;
+   padding:0 60px 0 60px;
 }
 .main-photo__list {
   padding-left: 0;
 }
+ @media ( min-width: @tab-width) {
+  .main-photo__text1{
+    width: 440px;
+    height: 43px;
+    margin-top: 100px;
+      margin-bottom: 85px;
+    font-size: 18px;
+    padding: 0 90px 0 90px;
+  }
+ }

@@ -1,25 +1,41 @@
 .username {
-
+display: flex;
+flex-direction: column;
+}
+.username__container{
+  display: flex;
+  flex-direction: column;
 }
 .username__label {
   display: block;
-  text-align: left;
   margin-left: 43px;
-  margin-right: auto;
+  margin-bottom: 17px;
+  width: 20px;
+  height: 10px;
   font-family: @norm;
   font-size: 14px;
   color: @purp;
 }
 .username__input {
+display: flex;
   padding-left: 20px;
-  margin:0 auto;
-  display: block;
-  width: 276px;
+  margin: 0 20px 0 20px;
+min-width: 256px;
   height: 59px;
 }
 @media (min-width: @tab-width) {
   .username {
     display: flex;
     flex-direction: column;
+    margin-top: 82px;
   }
+  .username__container{
+  display: flex;
+  flex-direction: row;
+
+}
+.username__input {
+  display: flex;
+
+}
 }

@@ -3,24 +3,44 @@
   bottom: 16px;
   left: 20px;
   display: block;
-   @media (min-width: @tab-width) {
-    width: 145px;
-    height: 40px;
+  width: px;
+   height: 40px;
   }
-  @media (min-width: @desk-width) {
-    width: 147px;
-    height: 40px;
+.nav__logo-pink-white-mobile,
+.nav__logo-pink-white-tablet,
+.nav__logo-pink-white-desktop {
+  fill: #ffffff;
+}
+.nav__logo-pink-white-mobile:hover {
+  fill: @purp;
+}
+.nav__logo-pink-white-tablet:hover{
+  fill: @purp;
+}
+.nav__logo-pink-white-desktop:hover{
+  fill: @purp;
+}
+
+.nav__logo-pink-white-tablet {
+  display: none;
+}
+.nav__logo-pink-white-desktop {
+  display: none;
+}
+@media (min-width: @tab-width) {
+  .nav__logo-pink-white-mobile {
+    display: none;
+  }
+  .nav__logo-pink-white-tablet{
+    display: block;
   }
 }
- .nav__logo img {
-  width: 74px;
-  height: 28px;
-  @media (min-width: @tab-width) {
-    width: 145px;
-    height: 40px;
-  }
-  @media (min-width: @desk-width) {
-    width: 147px;
-    height: 40px;
-  }
- }
+
+@media (min-width: @desk-width) {
+.nav__logo-pink-white-desktop {
+  display: block;
+}
+.nav__logo-pink-white-tablet{
+  display: none;
+}
+}

@@ -1,6 +1,89 @@
 .edit {
-
+display: flex;
+flex-direction: row;
+width: 220px;
+justify-content: space-between;
+margin: 0 auto;
+margin-top: 57px;
 }
 .edit__item {
   min-height: 100px;
+}
+.edit__line {
+  display: none;
+  width: 275px;
+  height: 1px;
+  background-color: @grey;
+  opacity: 0.1;
+}
+.edit__icon-editor-crop,
+.edit__icon-editor-fill,
+.edit__icon-editor-contrast
+ {
+  fill: @purp;
+  opacity: 1;
+  }
+.edit__icon-editor-crop:hover,
+.edit__icon-editor-fill:hover,
+.edit__icon-editor-contrast:hover,
+{
+  fill: @grey;
+  opacity: 0.5;
+  }
+.item--disabled .edit__icon-editor-fill,
+.item--disabled .edit__icon-editor-contrast {
+fill: @grey;
+  opacity: 0.3;
+
+}
+@media (min-width: @tab-width) {
+  .edit {
+    flex-direction: column;
+  }
+ .edit__item  {
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+
+  }
+  .edit__line  {
+    display: block;
+    margin-bottom: 20px;
+  }
+    .edit__icon-editor-crop {
+    width: 22px;
+    height: 22px;
+  }
+  .edit__icon-editor-fill{
+    width: 24px;
+   height: 22px;
+  }
+  .edit__icon-editor-contrast {
+   width: 16px;
+   height: 16px;
+    }
+}
+@media (min-width: @desk-width) {
+   .edit {
+    flex-direction: column;
+
+  margin-left: 90px;
+ }
+ .edit__item  {
+  display: flex;
+  flex-direction: row;
+ }
+
+  .edit__icon-editor-crop {
+    width: 44px;
+    height: 44px;
+  }
+  .edit__icon-editor-fill{
+    width: 48px;
+   height:43px;
+  }
+  .edit__icon-editor-contrast {
+   width: 32px;
+   height: 32px;
+    }
 }
