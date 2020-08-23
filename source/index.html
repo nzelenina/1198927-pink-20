@@ -22,6 +22,7 @@
             <button class=" nav__menu-toggle menu-toggle" type="button">
           </button>
         </nav>
+
             <ul class="header__nav nav-list">
               <li class="nav-list__item">
                 <a href="index.html" class="nav-list__link">Главная</a>
@@ -36,9 +37,11 @@
                 <a href="" class="nav-list__link">HTML Academy</a>
               </li>
             </ul>
+
         </header>
       <main class="page__main main">
         <section class="main__promo promo">
+          <div class="promo__container">
             <h1 class="promo__title">Взгляните на жизнь иначе</h1>
             <div class="promo__screen">
             <a href="#" class="promo__link">Скачать приложение</a>
@@ -61,15 +64,15 @@
              </ul>
           <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </p>
         </div>
+      </div>
         </section>
         <section class="main__description description">
-
+           <div class=" description__wrapper">
           <p class="description__text">Устали от серости мегаполиса?</p>
           <p class="description__text"> Нам есть, что вам предложить!</p>
+        </div>
           <ul class="description__list description-list">
             <li class="description-list__item">
-
-
              <h2 class="description-list__title">Поднимает настроение</h2>
              <p class="description-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
@@ -89,11 +92,11 @@
 
       </section>
 
-      <section class="main__diagram diagram">
+      <section class="main__diagram diagram ">
         <span class="diagram__digit">24</span>
         <h2 class="diagram__title">Эффект на 24 часа!</h2>
         <p class="diagram__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a href="#">Узнать больше об исследовании</a>
+        <a href="#" class="diagram__link ">Узнать больше об исследовании</a>
 
       </section>
       <section class="main__review reviews">
@@ -124,7 +127,7 @@
         <div class="price__container">
           <ul class="price__list tariff">
 
-            <li class="tariff__item1">
+            <li class="tariff__item">
               <div class="tariff__header1">
               </div>
             <ul class="tariff__list components">
@@ -135,16 +138,19 @@
             </ul>
           </li>
 
-          <li class="tariff__item tariff__item--hit">
+          <li class="tariff__item ">
           <div class="tariff__header">
             <h4 class="tariff__title">База</h4>
             <span class="tariff__cost">1.99 USD</span>
 
           </div>
             <ul class="tariff__list components">
-              <li class="components__item components__item--on">Розовый фильтр</li>
-                <li class="components__item components__item--on">Смайлики</li>
-                  <li class="components__item ">Комментарии</li>
+              <li class="components__item components__item--yes"><span
+               class="components__name">Розовый фильтр</span></li>
+                <li class="components__item components__item--yes"><span
+                  class="components__name">Смайлики</span>
+              </li>
+                  <li class="components__item components__item--no"><span class="components__name">Комментарии</span></li>
             </ul>
           </li>
           <li class="tariff__item tariff__item--hit">
@@ -154,21 +160,21 @@
 
           </div>
             <ul class="tariff__list components">
-              <li class="components__item components__item--on">Розовый фильтр</li>
-                <li class="components__item components__item--on">Смайлики</li>
-                  <li class="components__item ">Комментарии</li>
+              <li class="components__item components__item--yes"><span class="components__name">Розовый фильтр</span></li>
+                <li class="components__item components__item--yes"><span class="components__name">Смайлики</span></li>
+                  <li class="components__item components__item--no"><span class="components__name">Комментарии</span></li>
             </ul>
           </li>
-          <li class="tariff__item tariff__item--hit">
+          <li class="tariff__item ">
           <div class="tariff__header">
             <h4 class="tariff__title">Анлим</h4>
             <span class="tariff__cost">9.99 USD</span>
 
           </div>
             <ul class="tariff__list components">
-              <li class="components__item components__item--on">Розовый фильтр</li>
-                <li class="components__item components__item--on">Смайлики</li>
-                  <li class="components__item ">Комментарии</li>
+              <li class="components__item components__item--yes"><span class="components__name">Розовый фильтр</span></li>
+                <li class="components__item components__item--yes"><span class="components__name">Смайлики</span></li>
+                  <li class="components__item components__item--no"><span class="components__name">Комментарии</span></li>
             </ul>
           </li>
 
@@ -210,13 +216,14 @@
           </ul>
         </section>
         <div class="main__map map">
-         <picture>
+                  <picture>
                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x,
                 bg-map-tablet@2x.jpg  2x">
                 <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x,
                 bg-map-desktop@2x.jpg  2x">
              <img class="map__img" src="./img/bg-map-mobile@1x.png" alt="карта" width="320px" height="200px">
            </picture>
+         </div>
      </main>
   <footer class="page__footer footer">
         <span class="visually-hidden">pink</span>
@@ -257,7 +264,7 @@
          <a href="#">
         <span class="rights__text">Разработано</span>
              <svg class="rights__icon-academy" width="27px" height="34px">
-               <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+               <use xlink:href="./img/sprite.svg#logo-htmlacademy"></use>
            </svg>
         </a>
       </div>

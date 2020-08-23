@@ -1,5 +1,5 @@
 
-.menu-toggle, {
+.menu-toggle {
   display: block;
   padding:0px;
   width: 50px;
@@ -10,9 +10,7 @@
   bottom: 19px;
   right: 20px;
   cursor: pointer;
-  @media (min-width: @desk-width){
-    display: none;
-  }
+
 }
  .menu-toggle::before {
   position: absolute;
@@ -62,8 +60,26 @@
   opacity: 0.3;
 }
 }
+@media (min-width: @tab-width) {
+  .menu-toggle, {
+  display: block;
+  padding:0px;
+  width: 50px;
+  height: 24px;
+  background: inherit;
+  border:none;
+  position: absolute;
+  bottom: 38px;
+  right: 20px;
+  cursor: pointer;
 
-
+  }
+}
+  @media (min-width: @desk-width){
+   .menu-toggle{
+    display: none;
+  }
+}
 
 
 

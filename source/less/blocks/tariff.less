@@ -1,50 +1,85 @@
 .tariff {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   padding-left: 0;
-  margin: 0;
+
 }
 .tariff__list {
   padding-left: 0;
 }
 .tariff::before{
   content: "";
-  display: block;
   width: 100%;
-  height: 30px;
+  height: 93px;
   background-color: #f2f2f2;
-  z-index: -1;
+  z-index: 10;
   position: absolute;
-  top: -36px;
+  top: -117px;
   left:0;
   transform: translateY(-100%) skewY(-3deg);
   transform-origin: right;
 }
-.tariff__item {
 
-  border: 1px solid @light-grey;
+.tariff__item {
+    border: 1px solid @light-grey;
+  border-right: none;
   border-top: none;
 }
-.tariff__item1 {
+.tariff__item:first-child {
   display: none;
 }
-
+.tariff__item--hit {
+  position: relative;
+}
+.tariff__item--hit:before {
+  content: "";
+   position: absolute;
+  top: 0px;
+  left: 0;
+width: 100px;
+height: 100px;
+z-index: 10;
+background-image: url("../img/bg-hit-tablet.svg");
+background-repeat: no-repeat;
+}
+.tariff__item--hit:after {
+  content: "хит";
+  color: #ffffff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+width: 100px;
+height: 100px;
+z-index: 10;
+}
 .tariff__header {
   background-color: @grey;
-  min-height: 70px;
+height: 75px;
+padding-top: 19px;
 }
 .tariff__header1 {
   background-color: #f2f2f2;
-   min-height: 70px;
+   min-height: 94px;
 }
 .tariff__title {
+  font-family: @norm;
+  font-size: 14px;
+  text-transform: uppercase;
   color: #ffffff;
   margin-top: 0;
+  margin-bottom: 15px;
 }
 .tariff__cost {
   color: #ffffff;
 }
 @media (min-width: @tab-width) {
-  .tariff__item1  {
-    display: block;
-  }
+  .tariff__item:first-child {
+display: block;
+}
+ .tariff__item {
+  width: 25%;
+ }
 }

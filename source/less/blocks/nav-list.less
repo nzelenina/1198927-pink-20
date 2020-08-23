@@ -1,12 +1,16 @@
 .nav-list  {
   padding: 0;
   list-style: none;
- display: none;
- margin-top: 0px;
+ display: flex;
+ flex-direction: column;
+display: none;
+  margin-top: 0px;
+  height: 244px;
 
 }
 .header--nav-opened .nav-list{
 display: block;
+
 }
 .nav-list__link {
   color: @white;
@@ -29,4 +33,19 @@ display: block;
   border-bottom: 1px solid #000000;
   box-shadow: 0px 1px 0px, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
  padding-top: 23px;
+}
+ @media ( min-width: @desk-width){
+  .nav-list,
+  .header--nav-opened .nav-list{
+    display: flex;
+    flex-direction: row;
+    height: 105px
+  }
+  .nav-list__item {
+    border: none;
+    box-shadow: none;
+  }
+  .nav-list__link  {
+    opacity: 1;
+  }
 }

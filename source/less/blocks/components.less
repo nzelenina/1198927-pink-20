@@ -1,35 +1,66 @@
-.components {
-  border: 2px solid #e5e5e5;
 
-}
 .components__item {
-  width: 276px;
+  min-width: 276px;
+  height: 39px;
   position: relative;
-  min-height: 65px;
+
+  padding-top: 20px;
   background-color: #ffffff;
   border-bottom: 2px solid #e5e5e5;
 }
 .components__item:last-child {
   border-bottom: none;
 }
-.components__item::after {
+.components__item--no::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
+  top: 0px;
+ right: 0;
+  width: 31px;
   height: 30px;
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
 }
-.components__item--on::after {
+.components__item--yes::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+right:  0;
   width: 30px;
   height: 30px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
 
+}
+@media (min-width: @tab-width){
+.components__name{
+  display: none;
+
+}
+.components__item  {
+  height: 45px;
+  padding-top: 14px;
+
+}
+.components__item--no::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 147px;
+  width: 31px;
+  height: 30px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+}
+.components__item--yes::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 147px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+
+}
 }
