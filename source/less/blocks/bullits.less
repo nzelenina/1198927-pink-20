@@ -1,12 +1,10 @@
 .bullits {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  margin-top: 45px;
-  margin-bottom: 46px;
+  margin: 45px auto 46px;
   padding-left: 0;
-
 }
+
 .bullits__link {
   display: block;
   cursor: pointer;
@@ -19,18 +17,18 @@
 }
 
 .bullits__link--active {
-   display: block;
+  display: block;
   cursor: pointer;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #FFFFFF;
-border: 3px solid @grey;
-opacity: 1;
-position: relative;
-bottom: 2px;
+  border: 3px solid @grey;
+  opacity: 1;
+  position: relative;
+  bottom: 2px;
 }
-@media (min-width: @tab-width)  {
+@media (min-width: @tab-width) {
   .bullits {
     display: none;
   }

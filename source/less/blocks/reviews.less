@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
 }
+.reviews__sign {
+  display: none;
+}
 .reviews__list {
   z-index: 2;
  display: flex;
@@ -70,10 +73,59 @@ display: block;
 }
 @media (min-width: @desk-width) {
   .reviews{
-    bottom: -94px;
+
     min-height: 405px;
+    position: relative;
   }
+  .reviews:after {
+    content: "";
+    position: absolute;
+    top: 108px;
+    left: 50%;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-quotes.svg");
+    background-size: cover;
+
     }
+    .reviews__list:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    }
+    .reviews__list:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right:  0px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    }
+    .reviews__item{
+        margin: 0 auto;
+    }
+    .reviews__slider-control {
+      display: none;
+    }
+    .reviews__text {
+      width: 688px;
+      height: 73px;
+      font-size: 18px;
+
+    }
+    .reviews__sign {
+      display: block;
+    }
+  }
 
 
 

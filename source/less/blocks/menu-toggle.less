@@ -1,91 +1,86 @@
-
 .menu-toggle {
   display: block;
-  padding:0px;
+  padding: 0;
   width: 50px;
   height: 24px;
   background: inherit;
-  border:none;
+  border: none;
   position: absolute;
   bottom: 19px;
   right: 20px;
   cursor: pointer;
-
 }
- .menu-toggle::before {
+
+.menu-toggle::before {
   position: absolute;
   content: "";
-  top:0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 50px;
   height: 2px;
   background-color: #ffffff;
-   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
+
 .menu-toggle:hover::before {
- background-color: @purp;
+  background-color: @purp;
   box-shadow: 0 8px 0 0 @purp, 0 16px 0 0 @purp;
 }
+
 .menu-toggle:active::before {
- background-color: @purp;
+  background-color: @purp;
   box-shadow: 0 8px 0 0 @purp, 0 16px 0 0 @purp;
   opacity: 0.3;
 }
+
 .header--nav-opened .menu-toggle {
- &::before,
- &::after {
-     top: 10px;
-    right: 0px;
+  &::after,
+  &::before {
+    top: 10px;
+    right: 0;
     content: "";
     position: absolute;
     width: 27px;
     height: 2px;
     background-color: #ffffff;
     box-shadow: none;
-}
+  }
 
-&::after {
-  transform: rotate(45deg);
-}
-&::before {
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
     transform: rotate(-45deg);
- }
-  &:hover::before,
- &:hover::after {
-  background-color: @purp;
-}
- &:active::before,
- &:active::after {
-  border: none;
-  opacity: 0.3;
-}
-}
-@media (min-width: @tab-width) {
-  .menu-toggle, {
-  display: block;
-  padding:0px;
-  width: 50px;
-  height: 24px;
-  background: inherit;
-  border:none;
-  position: absolute;
-  bottom: 38px;
-  right: 20px;
-  cursor: pointer;
+  }
 
+  &:hover::after,
+  &:hover::before {
+    background-color: @purp;
+  }
+
+  &:active::after,
+  &:active::before {
+    border: none;
+    opacity: 0.3;
   }
 }
-  @media (min-width: @desk-width){
-   .menu-toggle{
+@media (min-width: @tab-width) {
+  .menu-toggle {
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 24px;
+    background: inherit;
+    border: none;
+    position: absolute;
+    bottom: 38px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+@media (min-width: @desk-width) {
+  .menu-toggle {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-

@@ -1,53 +1,49 @@
 .main__map {
   position: relative;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .map__img {
   width: 100%;
 }
- @media (max-width: @tab-width) {
-.map::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 62px;
-  top: -20px;
-  left: 0px;
-  z-index: 2;
-  background-image: url("../img/bg-triangle-white.svg");
- /* background-size: cover;
-  background-position: center;*/
-transform: scale(-1,1);
-}
-.map::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 62px;
-  top: -20px;
-  left: 50%;
-  z-index: 2;
-  background-image: url("../img/bg-triangle-white.svg");
-  /*background-size: cover;
-  background-position: center;*/
-
-}
-}
- @media (min-width: @tab-width) {
+@media (max-width: @tab-width) {
   .map::before {
-  content: "";
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 62px;
+    top: -20px;
+    left: 0;
+    z-index: 2;
+    background-image: url("../img/bg-triangle-white.svg"); /* background-size: cover;
+  background-position: center;*/
+    transform: scale(-1,1);
+  }
 
-  position: absolute;
- width: 100%;
-  height: 114px;
-  top: -1px;
-  left: 0;
-
-  background-image: url("../img/bg-triangle-white-footer.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  .map::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 62px;
+    top: -20px;
+    left: 50%;
+    z-index: 2;
+    background-image: url("../img/bg-triangle-white.svg");
+    /*background-size: cover;
+  background-position: center;*/
+  }
 }
+@media (min-width: @tab-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 114px;
+    top: -1px;
+    left: 0;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

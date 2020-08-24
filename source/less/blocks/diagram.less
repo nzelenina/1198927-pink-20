@@ -1,18 +1,17 @@
 .diagram {
   display: none;
 }
-@media (min-width: @tab-width){
+@media (min-width: @tab-width) {
   .diagram--off {
     display: none;
   }
-    .diagram  {
+  .diagram {
     display: flex;
-flex-direction: column;
-
-background-color: #ffffff;
-position: relative;
-min-height: 330px;
-width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: relative;
+    min-height: 330px;
+    width: 100%;
   }
   .diagram:before {
     content: "";
@@ -33,55 +32,57 @@ width: 100%;
     height: 210px;
     border-radius: 50%;
     border: 18px solid #D22856;
-box-sizing: border-box;
-
+    box-sizing: border-box;
   }
-    .diagram__title {
 
-  font-family: @bold;
-  font-size: 30px;
-  color: #000000;
-  line-height: 36px;
-  width: 168px;
-  height: 59px;
-  margin-left: 330px;
-  text-align: left;
-}
-.diagram__text {
-  font-family: @norm;
-  font-size: 14px;
-  line-height: 24px;
-  color: @grey;
-  width: 310px;
-  height: 82px;
-  margin-left: 330px;
-  text-align: left;
-}
-.diagram__link {
-  display: block;
-  margin-top: 24px;
-  font-size: 14px;
-  font-family: @norm;
-  width: 226px;
-  height: 10px;
-  margin-left: 330px;
-}
-.diagram__digit{
-  font-family: @bold;
-  font-size: 96px;
-  color: @purp;
-  position: absolute;
-  top: 83px;
-  left: 60px;
-}
+  .diagram__title {
+    font-family: @bold;
+    font-size: 30px;
+    color: #000000;
+    line-height: 36px;
+    width: 168px;
+    height: 59px;
+    margin-left: 330px;
+    text-align: left;
+  }
 
+  .diagram__text {
+    font-family: @norm;
+    font-size: 14px;
+    line-height: 24px;
+    color: @grey;
+    width: 310px;
+    height: 82px;
+    margin-left: 330px;
+    text-align: left;
+  }
+
+  .diagram__link {
+    display: block;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: @norm;
+    width: 226px;
+    height: 10px;
+    margin-left: 330px;
+  }
+
+  .diagram__digit {
+    font-family: @bold;
+    font-size: 96px;
+    color: @purp;
+    position: absolute;
+    top: 83px;
+    left: 60px;
+  }
 }
 @media (min-width: @desk-width) {
-  .diagram  {
-   min-height: 429px;
+  .diagram {
+    min-height: 429px;
     background-color: #f2f2f2;
-}
- .diagram:before {
+  }
+
+  .diagram:before {
     content: "";
     position: absolute;
     top: -46px;
@@ -91,7 +92,31 @@ box-sizing: border-box;
     background-image: url("../img/timer.png");
     background-size: cover;
   }
+
   .diagram__title {
+    margin-left: 538px;
+    width: 298px;
+    height: 23px;
+    line-height: 30px;
+    font-size: 18px;
     margin-top: 115px;
+  }
+  .diagram__text {
+    margin-left: 538px;
+    width: 534px;
+    height: 74px;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 37px;
+  }
+  .diagram__container {
+    width: 100vp;
+    text-align: left;
+  }
+  .diagram__link {
+    display: block;
+    margin-left: 538px;
+    width: 290px;
+    margin-top: 47px;
   }
 }
