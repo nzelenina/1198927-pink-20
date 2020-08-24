@@ -1,14 +1,19 @@
 .main__review {
-position: relative;
-bottom: 50px;
-z-index: 2;
+
   background-color: #ffffff;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+.reviews__sign {
+  display: none;
 }
 .reviews__list {
   z-index: 2;
  display: flex;
  flex-direction: row;
-
+position: relative;
  margin: 0 auto;
  margin-bottom: 34px;
  padding: 0;
@@ -34,26 +39,93 @@ z-index: 2;
 .btn-review-3:checked ~ .reviews__list .review-3 {
 display: block;
 }
+.reviews__slider-control {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
 .reviews__slider-control label{
-
-  display: inline-block;
-  width: 6px;
+   width: 6px;
   height: 6px;
   background-color: @grey;
+  opacity: 0.3;
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 19px;
 }
 .btn-review-1:checked ~ .reviews__slider-control label[for="btn-review-1"],
 .btn-review-2:checked ~ .reviews__slider-control label[for="btn-review-2"],
 .btn-review-3:checked ~ .reviews__slider-control label[for="btn-review-3"]{
   width: 6px;
   height: 6px;
+  position: relative;
+  bottom: 3px;
   background-color: #ffffff;
   border: 3px solid @grey;
   border-radius: 50%;
+  opacity: 1;
 
 }
+@media (min-width: @tab-width) {
+  .reviews__list {
+    margin: 253px 20px 0 20px;
+  }
+}
+@media (min-width: @desk-width) {
+  .reviews{
 
+    min-height: 405px;
+    position: relative;
+  }
+  .reviews:after {
+    content: "";
+    position: absolute;
+    top: 108px;
+    left: 50%;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-quotes.svg");
+    background-size: cover;
+
+    }
+    .reviews__list:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    }
+    .reviews__list:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right:  0px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    }
+    .reviews__item{
+        margin: 0 auto;
+    }
+    .reviews__slider-control {
+      display: none;
+    }
+    .reviews__text {
+      width: 688px;
+      height: 73px;
+      font-size: 18px;
+
+    }
+    .reviews__sign {
+      display: block;
+    }
+  }
 
 
 

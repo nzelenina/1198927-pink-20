@@ -1,25 +1,28 @@
 .promo {
-
+display: flex;
+flex-direction: column;
+height: 733px;
   position: relative;
-
+  top:-66px;
+padding-top: 66px;
+z-index: -1;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-width: @tab-width) {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
- }
+
  }
 .promo::after {
   content: "";
   position: absolute;
-  top: 180px;
-  left: 5px;
+  top: 214px;
+  left: 30%;
   width: 270px;
-  height: 270px;
+  height: 286px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
 }
 .promo__screen {
+  margin-top: 348px;
   padding-top: 28px;
   padding-bottom: 30px;
    @media (max-width:@tab-width) {
@@ -34,8 +37,9 @@
   color: @white;
   margin-top: 0;
   width: 260px;
-  padding: 0 20px 0 20x;
-  min-height: 348px;
+  padding: 20px 20px 0 20px;
+
+
   @media (min-width: @tab-width) {
      font-size: 40px;
 }
@@ -74,21 +78,78 @@
 }
 
  @media (min-width: @tab-width) {
-  .promo::after {
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    width: 660px;
-    height: 545px;
-    left: 70px;
+  .promo {
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+background-position: left -210px top -58px;
+height: 619px;
+background-size: cover;
+ top: -110px;
+    padding-top: 110px;
+z-index: -1;
   }
+  .promo::after{
+    display: none;
+  }
+
+  .promo__container {
+    width: 660px;
+    position: relative;
+    margin-top: 24px;
+background-image: url("../img/iphone-hand-tablet@1x.png");
+ background-repeat: no-repeat;
+
+  }
+  .promo__screen {
+  margin-top: 0px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+
+}
+
+ /* .promo__container::after {
+  content: "";
+  position: absolute;
+  top: 51px;
+  left: 5px;
+  z-index: 0;
+  width: 660px;
+  height: 519px;
+  background-image: url("../img/iphone-hand-tablet@1x.png");
+  background-repeat: no-repeat;
+*/
   .promo__title {
-    margin-left: 20px;
+    width: 240px;
+    height: 127px;
+margin-left: 0;
+
+    font-size: 40px;
   }
   .promo__link {
-    margin-left: 20px;
+    margin-left: 0;
+margin-top: 39px;
+margin-bottom: 72px;
   }
   .promo__text {
+    width: 300px;
+    height: 37px;
     font-size: 18px;
-    margin-bottom: 38px;
+    margin-top: 42px;
+    margin-bottom: 119px;
+  }
+}
+@media (min-width: @desk-width){
+  .promo {
+    top: -110px;
+    height: 743px;
+    padding-top: 110px;
+z-index: -1;
+  background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+  .promo__container {
+    width: 100%;
+    margin-top: 93px;
+    margin-left: 154px;
+    background-position: center;
   }
 }
 

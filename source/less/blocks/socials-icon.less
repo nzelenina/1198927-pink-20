@@ -1,14 +1,13 @@
 .socials-icon {
   position: relative;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto 0;
   display: flex;
   flex-direction: row;
   padding-left: 0;
   justify-content: space-between;
   width: 172px;
-
 }
+
 .socials-icon-link {
   display: block;
   position: relative;
@@ -18,35 +17,38 @@
   border-radius: 100%;
   cursor: pointer;
 }
+
 .socials-icon-link:hover {
   border: 3px solid @grey;
 }
-.socials-icon__twitter,
+
 .socials-icon__facebook,
+.socials-icon__twitter,
 .socials-icon__youtube {
   fill: @purp;
 }
+
 .socials-icon__twitter {
   position: absolute;
-  top:13px;
+  top: 13px;
   left: 15px;
 }
-.socials-icon__facebook{
+
+.socials-icon__facebook {
   position: absolute;
-  top:13px;
+  top: 13px;
   left: 13px;
 }
-.socials-icon__youtube{
- position: absolute;
-  top:13px;
+
+.socials-icon__youtube {
+  position: absolute;
+  top: 13px;
   left: 16px;
-    }
+}
+
 .socials-icon-link:active {
   opacity: 0.3;
 }
-
 @media (min-width: @tab-width) {
-  .socials-icon {
-
-  }
+  .socials-icon {}
 }
