@@ -1,13 +1,25 @@
 .promo-socials-list {
   display: flex;
   flex-direction: row;
-  position: relative;
+
   justify-content: space-between;
   padding-left: 0;
-  width: 204px;
-  margin-left: 58px;
+
+  margin: 0 58px 0 58px;
+  margin-top: 32px;
+
 }
-/*.promo-socials-list__link--apple::after {
+.promo-socials-list__link {
+  display: block;
+   cursor: pointer;
+}
+.promo-socials-list__link--apple  {
+  position: relative;
+  display: block;
+  width: 47px;
+height: 56px;
+}
+.promo-socials-list__link--apple::after {
   content: "";
 position: absolute;
 top: 0;
@@ -17,22 +29,40 @@ width: 47px;
 height: 56px;
 background-repeat: no-repeat;
 }
+.promo-socials-list__link--android{
+  position: relative;
+    display: block;
+  width: 43px;
+height: 47px;
+}
 .promo-socials-list__link--android::after { content: "";
 position: absolute;
-top: 0px;
-left: 100px;
+top: 6px;
+left: 0px;
   background-image: url("../img/logo-android.svg");
-width: 47px;
-height: 56px;
+width: 43px;
+height: 47px;
 background-repeat: no-repeat;
+}
+.promo-socials-list__link--windows {
+  position: relative;
+    display: block;
+  width: 44px;
+height: 41px;
 }
 .promo-socials-list__link--windows::after { content: "";
 position: absolute;
-top: 0px;
+top: 6px;
 left: 0px;
   background-image: url("../img/logo-microsoft.svg");
-width: 47px;
-height: 56px;
+width: 44px;
+height: 41px;
 background-repeat: no-repeat;
-}*/
+}
+@media (min-width: @tab-width) {
+.promo-socials-list {
 
+  width: 180px;
+  margin-left: 66px;
+}
+}
