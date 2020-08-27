@@ -6,11 +6,13 @@
     display: none;
   }
   .diagram {
+
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     position: relative;
-    min-height: 330px;
+    margin-top: 48px;
+    min-height: 280px;
     width: 100%;
   }
   .diagram:before {
@@ -18,7 +20,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 298px;
+    width: 238px;
     height: 276px;
     background-image: url("../img/timer.png");
     background-size: cover;
@@ -78,15 +80,20 @@
 }
 @media (min-width: @desk-width) {
   .diagram {
+    margin-top: -50px;
     min-height: 429px;
     background-color: #f2f2f2;
+  }
+  .diagram__digit {
+    top: 140px;
+    left: 213px;
   }
 
   .diagram:before {
     content: "";
     position: absolute;
-    top: -46px;
-    left: 0;
+    top: 11px;
+    left: 118px;
     width: 298px;
     height: 345px;
     background-image: url("../img/timer.png");
@@ -98,7 +105,7 @@
     width: 298px;
     height: 23px;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 30px;
     margin-top: 115px;
   }
   .diagram__text {
@@ -110,7 +117,7 @@
     margin-top: 37px;
   }
   .diagram__container {
-    width: 100vp;
+    width: 100vw;
     text-align: left;
   }
   .diagram__link {
@@ -118,5 +125,16 @@
     margin-left: 538px;
     width: 290px;
     margin-top: 47px;
+  }
+   .diagram:after {
+    content: "";
+    position: absolute;
+    top: 98px;
+    left: 156px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 18px solid #D22856;
+    box-sizing: border-box;
   }
 }

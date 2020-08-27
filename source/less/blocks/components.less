@@ -6,7 +6,11 @@
   background-color: #ffffff;
   border-bottom: 2px solid #e5e5e5;
 }
-
+ .components__name  {
+  font-family: @norm;
+  font-size: 14px;
+  color: @grey;
+ }
 .components__item:last-child {
   border-bottom: none;
 }
@@ -14,8 +18,8 @@
 .components__item--no::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 13px;
   width: 31px;
   height: 30px;
   background-image: url("../img/icon-no.svg");
@@ -25,8 +29,8 @@
 .components__item--yes::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 13px;
   width: 30px;
   height: 30px;
   background-image: url("../img/icon-yes.svg");
@@ -38,16 +42,18 @@
   }
 
   .components__item {
-
-    height: 45px;
+     font-family: @norm;
+  font-size: 14px;
+  color: @grey;
+    height: 31px;
     padding-top: 14px;
   }
 
   .components__item--no::after {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 147px;
+    top: 10px;
+    right: 40%;
     width: 31px;
     height: 30px;
     background-image: url("../img/icon-no.svg");
@@ -57,8 +63,8 @@
   .components__item--yes::after {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 147px;
+    top: 10px;
+    right: 40%;
     width: 30px;
     height: 30px;
     background-image: url("../img/icon-yes.svg");
