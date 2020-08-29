@@ -1,27 +1,24 @@
 .posts {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 0 20px;
+
 }
 .posts__item {
 margin-bottom: 20px;
 }
-
-
 .posts__description {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 0 auto;
+  min-height: 144px;
+  margin: 0 20px 0 20px;
    background-color: #f2f2f2;
    padding-left: 18px;
-
 }
 .posts__name {
   font-family: @bold;
   font-size: 14px;
 }
-
 .posts__text,
 .posts__time {
   font-family: @norm;
@@ -33,11 +30,9 @@ margin-bottom: 20px;
 }
  .posts__img-photo-day {
   width: 100vw;
-
 }
 .posts__item  {
   position: relative;
-
 }
  .item--photo-day {
   width: 100%;
@@ -56,7 +51,7 @@ margin: 0 20px 0 20px;
   height: 36px;
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 27px;
 
   background-color: @purp;
 }
@@ -77,12 +72,22 @@ width: 49%;
  .posts__img-photo-day {
  min-height: 509px;
  }
+   .item--photo-day::before{
+  content: "панорама дня";
+  font-family: @bold;
+  color: #ffffff;
+  font-size: 12px;
+   display: block;
+  width: 140px;
+  height: 36px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: @purp;
+}
  .posts__img {
  width: 100%;
-
  }
-
-
 }
  @media ( min-width: @desk-width){
   .posts {

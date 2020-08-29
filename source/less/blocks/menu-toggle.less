@@ -6,14 +6,13 @@
     background: inherit;
     border: 0;
     position: absolute;
-    top: -45px;
+    top: 23px;
     right: 20px;
     cursor: pointer;
 }
-
-
-
-
+.header--nav-opened  .menu-toggle {
+  top: -46px;
+}
 .menu-toggle::before {
   position: absolute;
   content: "";
@@ -24,18 +23,15 @@
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
-
 .menu-toggle:hover::before {
   background-color: @purp;
   box-shadow: 0 8px 0 0 @purp, 0 16px 0 0 @purp;
 }
-
 .menu-toggle:active::before {
   background-color: @purp;
   box-shadow: 0 8px 0 0 @purp, 0 16px 0 0 @purp;
   opacity: 0.3;
 }
-
 .header--nav-opened .menu-toggle {
   &::after,
   &::before {
@@ -81,6 +77,9 @@
     right: 20px;
     cursor: pointer;
   }
+  .header--nav-opened  .menu-toggle {
+  top: -65px;
+}
 }
 @media (min-width: @desk-width) {
   .menu-toggle {

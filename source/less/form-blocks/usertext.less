@@ -1,17 +1,21 @@
  .usertext {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
  }
  .usertext__title {
   font-family: @norm;
   font-size: 14px;
   color: @purp;
   text-transform: uppercase;
+  margin-top: 42px;
+  margin-bottom: 22px;
  }
  .usertext__emotion {
   display: flex;
   min-width: 276px;
-  min-height: 189px;
+  min-height: 167px;
+  padding-top: 22px;
 
   font-family: @norm;
   font-size: 18px;
@@ -47,3 +51,27 @@
  top: -10px;
  }
 }
+@media (min-width: @desk-width){
+.usertext {
+ margin: 69px 132px 50px 132px;
+ width: 936px;
+}
+.usertext__emotion {
+  width: 796px;
+  height: 124px;
+
+    padding-left: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

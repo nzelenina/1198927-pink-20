@@ -1,26 +1,23 @@
 .header {
   position: relative;
-
+  min-height: 66px;
+  z-index: 2;
   background: rgba(0, 0, 0, 0.3);
 }
-
 .header--nav-opened {
   background: #283645;
-  padding-top: 69px;
+  padding-top: 66px;
 }
 
 .header__nav {
-
   width: 100%;
-
 }
 @media (min-width: @tab-width) {
   .header--nav-opened {
+     padding-top: 110px;
+   }
+   .header {
     min-height: 110px;
-  }
-
-  .header {
-   min-height: 110px;
   }
 }
 @media (min-width: @desk-width) {
@@ -28,6 +25,7 @@
     flex-direction: row;
     background: rgba(0, 0, 0, 0.3);
   }
-
-
+.header--nav-opened {
+  padding-top: 0;
+}
 }

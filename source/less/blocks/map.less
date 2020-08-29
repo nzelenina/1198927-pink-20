@@ -26,8 +26,8 @@
     top: -35px;
     left: 0;
     z-index: 2;
-    background-image: url("../img/bg-triangle-white.svg"); /* background-size: cover;
-  background-position: center;*/
+    background-image: url("../img/bg-triangle-white.svg");
+
       transform: scale(-1,1);
   }
 
@@ -40,8 +40,7 @@
     left: 50%;
     z-index: 2;
     background-image: url("../img/bg-triangle-white.svg");
-    /*background-size: cover;
-  background-position: center;*/
+
   }
 }
 @media (min-width: @tab-width) {
@@ -57,4 +56,13 @@
     background-size: cover;
     background-position: center;
   }
+}
+@media (min-width: @desk-width) {
+.map__marker {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 221px;
+  left: 568px;
+}
 }

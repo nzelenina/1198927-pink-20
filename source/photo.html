@@ -9,7 +9,7 @@
 
 <body class="page-photo">
   <header class="page-photo__header  header header--nav-opened">
-    <nav class="header__nav nav">
+
       <a class="nav__logo" href="">
         <svg class="nav__logo-pink-white-mobile" width="74px" height="23px">
           <use xlink:href="./img/sprite.svg#logo-pink-white-mobile"></use>
@@ -21,9 +21,10 @@
           <use xlink:href="./img/sprite.svg#logo-pink-white-desktop"></use>
         </svg>
       </a>
+       <nav class="header__nav nav">
       <button class=" nav__menu-toggle menu-toggle" type="button">
       </button>
-    </nav>
+
     <ul class="header__nav nav-list">
       <li class="nav-list__item">
         <a href="index.html" class="nav-list__link">Главная</a>
@@ -38,6 +39,7 @@
         <a href="" class="nav-list__link">HTML Academy</a>
       </li>
     </ul>
+     </nav>
   </header>
 
   <main class="page-photo__main main-photo">
@@ -46,8 +48,8 @@
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </p>
 
-    <a href="">
       <div class="posts__item item--photo-day">
+          <a href="#">
         <picture>
           <source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x, panorama-tablet@2x.jpg 2x">
           <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, panorama-desktop@2x.jpg 2x">
@@ -55,8 +57,10 @@
         </picture>
     </a>
     <div class="posts__description">
+      <div>
       <span class="posts__name">Aнна</span>
       <span class="posts__time">(5 минут назад)</span>
+    </div>
       <p class="posts__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
       </p>
 
@@ -75,7 +79,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.jpg 1x, photo-car-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-car-tablet-desktop@1x.jpg 1x, photo-car-desktop@2x.jpg 2x">
-            <img class="posts__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="автомобиль" width="320px" height="137px">
+            <img class="posts__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="автомобиль" width="280px" height="137px">
           </picture>
         </a>
         <div class="posts__description">
@@ -99,7 +103,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, photo-drumset-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-drumset-tablet-desktop@1x.jpg 1x, photo-drumset-desktop@2x.jpg 2x">
-            <img class="posts__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="ударные" width="320px" height="137px">
+            <img class="posts__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="ударные" width="280" height="137px">
           </picture>
         </a>
         <div class="posts__description">
@@ -123,7 +127,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.jpg 1x, photo-window-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-window-tablet-desktop@1x.jpg 1x, photo-window-desktop@2x.jpg 2x">
-            <img class="posts__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="окно" width="320px" height="137px">
+            <img class="posts__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="окно" width="280" height="137px">
           </picture>
         </a>
         <div class="posts__description">
@@ -148,7 +152,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.jpg 1x, photo-fair-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-fair-tablet-desktop@1x.jpg 1x, photo-fair-desktop@2x.jpg 2x">
-            <img class="posts__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="страх" width="320px" height="137px">
+            <img class="posts__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="страх" width="280" height="137px">
           </picture>
         </a>
         <div class="posts__description">
@@ -172,7 +176,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.jpg 1x, photo-pov-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, photo-pov-desktop@2x.jpg 2x">
-            <img class="posts__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="страх" width="320px" height="137px">
+            <img class="posts__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="страх" width="280" height="137px">
           </picture>
         </a>
         <div class="posts__description">
@@ -196,7 +200,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.jpg 1x, photo-wing-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, photo-wing-desktop@2x.jpg 2x">
-            <img class="posts__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="страх" width="320px" height="137px">
+            <img class="posts__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="страх" width="280" height="137px">
           </picture>
         </a>
         <div class="posts__description">
@@ -326,7 +330,7 @@
       <a href="#">
         <span class="rights__text">Разработано</span>
         <svg class="rights__icon-academy" width="27px" height="34px">
-          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          <use xlink:href="./img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>

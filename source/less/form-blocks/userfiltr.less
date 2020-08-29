@@ -1,10 +1,12 @@
 .userfiltr {
   background-color: #f2f2f2;
-margin-top: 30px;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
 }
 .userfiltr__title {
   margin:0 auto;
-
+  margin-top: 34px;
   width: 218px;
   height: 35px;
   font-size: 14px;
@@ -23,9 +25,20 @@ margin-top: 30px;
     position: relative;
     background-color: #ffffff;
     width: 436px;
-    top: -10px;
+    top: -44px;
     z-index: 1;
     text-transform: uppercase;
+
+
   }
 
+ }
+ @media ( min-width: @desk-width) {
+   .userfiltr {
+    width: 936px;
+    min-height: 228px;
+     margin: 65px 132px 0 132px;
+     display: flex;
+     flex-direction: column;
+   }
  }

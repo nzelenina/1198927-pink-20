@@ -12,11 +12,24 @@
   margin: 0 auto;
   background-color: @green;
   color: @white;
-  border: 2px solid #2AAB6D;
+  border: 2px solid @green;
   border-radius: 1px;
+}
+.main-form-comment__btn:hover {
+  background-color: @darkgreen;
+}
+.main-form-comment__btn:active {
+  opacity: 0.3;
+  border: none;
 }
 .main-form-comment__star {
   color: @purp;
+}
+.main-form-comment__text {
+  margin-top: 42px;
+  font-family: @norm;
+  font-size: 14px;
+
 }
 .main-form-comment__text-big {
   display: none;
@@ -27,11 +40,18 @@
     justify-content: space-between;
     margin-bottom: 50px;
   }
+  .main-form-comment__text{
+    margin-top: 19px;
+  }
   .main-form-comment__btn {
     margin: 0;
   }
     }
 @media (min-width: @desk-width) {
+  .main-form-comment {
+    margin: 20px 132px 0 132px;
+    width: 936px;
+  }
 .main-form-comment__text {
   display: none;
 }
