@@ -31,17 +31,37 @@
    font-family: @norm;
   font-size: 14px;
   color: @grey;
-  width: 160px;
+  width: 280px;
   height: 71px;
   margin: 0 auto;
    margin-top: 49px;
    margin-bottom: 52px;
-   padding:0 60px 0 60px;
+
 }
 .main-photo__list {
   padding-left: 0;
 }
  @media ( min-width: @tab-width) {
+  .main-photo__text2 {
+   font-family: @norm;
+  font-size: 14px;
+  color: @grey;
+  width: 422px;
+  height: 43px;
+  margin: 0 auto;
+   margin-top: 49px;
+   margin-bottom: 52px;
+}
+.main-photo__text1 {
+ font-family: @norm;
+  font-size: 18px;
+  color: @grey;
+  width: 588px;
+  height: 70px;
+  margin: 0 auto;
+   margin-top: 5px;
+   margin-bottom: 54px;
+}
   .main-photo__title {
   font-family: @light;
   font-weight: 300;
@@ -63,12 +83,18 @@
     top:-110px;
     padding-top: 200px;
       }
-  .main-photo__text1{
-    width: 440px;
-    height: 43px;
-    margin-top: 25px;
-      margin-bottom: 85px;
-    font-size: 18px;
-    padding: 0 90px 0 90px;
-  }
+
  }
+ @media ( min-width: @desk-width) {
+  .main-photo__text2 {
+   font-family: @norm;
+  font-size: 18spx;
+  color: @grey;
+  width: 422px;
+  height: 43px;
+  margin: 0 auto;
+   margin-top: 49px;
+   margin-bottom: 52px;
+   padding:0 60px 0 60px;
+}
+}

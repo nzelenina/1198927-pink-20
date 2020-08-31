@@ -7,10 +7,12 @@ margin: 0 auto;
 margin-top: 57px;
 }
 .edit__item {
+  position: relative;
   min-height: 100px;
 }
 .edit__line {
   display: none;
+  position: absolute;
   width: 275px;
   height: 1px;
   background-color: @grey;
@@ -40,6 +42,7 @@ fill: @grey;
   .edit {
     flex-direction: column;
   }
+
  .edit__item  {
   display: flex;
   flex-direction: row;
@@ -48,7 +51,9 @@ fill: @grey;
   }
   .edit__line  {
     display: block;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 41px;
+
   }
     .edit__icon-editor-crop {
     width: 22px;
