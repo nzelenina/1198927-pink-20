@@ -8,6 +8,8 @@
 .header--nav-opened .nav-list{
 display: block;
 }
+
+
 .nav-list__link {
   color: @white;
   font-family: @bold;
@@ -15,12 +17,14 @@ display: block;
   line-height: 18px;
   display: block;
 }
-.nav-list__link:hover {
-  color: @purp;
-}
 .nav-list__link:active {
   opacity: 0.3;
 }
+
+.nav-list__link:hover {
+  color: @purp;
+}
+
 
 .nav-list__item {
   min-height: 41px;
@@ -53,6 +57,11 @@ display: block;
   }
   .nav-list__link {
     font-family: @norm;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .nav-list__link--visited {
+    border-bottom: 1px solid #ffffff;
   }
 
 }
