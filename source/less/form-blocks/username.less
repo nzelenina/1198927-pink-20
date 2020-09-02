@@ -36,6 +36,7 @@ border-radius: 1px;
   .username {
     display: flex;
     flex-direction: column;
+
     margin-top: 82px;
   }
   .username__container{
@@ -58,9 +59,23 @@ width: 100%;
 }
 }
 @media (min-width: @desk-width){
-  .username {
-    width: 50%;
-  }
+.username{
+  justify-content: space-between;
+  height: 293px;
+  margin-top: 0;
+  padding-top: 5px;
+}
+.username__input  {
+  margin: 10px 74px 0px 20px;
+
+}
+.username__label,
+.username__label-name
+ {
+  margin-left: 0px;
+}
+
+
 }
 
 

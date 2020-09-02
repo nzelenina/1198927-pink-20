@@ -110,9 +110,19 @@ width: 49%;
  }
 }
  @media ( min-width: @desk-width){
+
   .posts {
    margin: 0 130px 0 130px;
   }
+
+  .item--photo-day .gh {
+    width: 40%;
+  }
+  .item--photo-day .likes {
+    padding-left: 475px;
+    width: 150px;
+    height: 17px;
+}
 .posts__item {
   width: 32%;
 
@@ -121,11 +131,18 @@ width: 49%;
   width: 100%;
   margin:  0 0 0 0;
 }
-
+.item--photo-day  .posts__text1 {
+margin-top: -40px;
+  height: 20px;
+}
 
 .item--photo-day .posts__description
 {
-  margin: 0 60px 0 60px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 96px;
+  margin: 0 130px 50px 130px;
 }
 .posts__img {
   min-height: 400px;

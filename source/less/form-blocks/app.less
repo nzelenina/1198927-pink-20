@@ -116,13 +116,52 @@ content: "";
 
 @media (min-width: @desk-width) {
   .app {
+      height:  295px;
+      width: 473px;
     margin: 0 0 0 0;
-    width: 50%;
-
+     }
+  .app__label {
+    padding-left: 133px;
   }
+    .app__circle-1 {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 197px;
+  left: 74px;
+  border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+
+}
+  .app__circle-2 {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 120px;
+  left: 74px;
+  border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+
+}
+  .app__circle-3 {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 43px;
+  left: 74px;
+  border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+
+}
+input[type="radio"]:checked + .app__label::before{
+  left: 89px;
+top: 1px;
 }
 
-
+}
 
 
 
