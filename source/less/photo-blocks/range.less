@@ -25,6 +25,10 @@ left: 180px;
 z-index: 1;
 background-color: #ffffff;
 }
+.range__haddle:active {
+  background-color: @purp;
+}
+
 @media (min-width: @tab-width) {
   .range {
     margin-left: 32px;
@@ -48,5 +52,8 @@ background-color: #ffffff;
     display: block;
     position: relative;
     top: -30px;
+  }
+  .range__scale{
+    width: 335px;
   }
 }

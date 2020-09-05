@@ -30,6 +30,14 @@ box-sizing: border-box;
 border-radius: 30px;
 cursor: pointer;
 }
+.form-post__btn:hover {
+  color: #ffffff;
+  background-color: @purp;
+}
+.form-post__btn:active {
+  opacity: 0.3;
+
+}
 .form-post__btn--disabled {
   font-family: @bold;
   font-size: 18px;
@@ -43,6 +51,7 @@ cursor: pointer;
 box-sizing: border-box;
 border-radius: 30px;
 opacity: 0.1;
+padding-top: 10px;
 }
 @media (min-width: @tab-width) {
   .form-post {
@@ -58,9 +67,18 @@ opacity: 0.1;
     height: 400px;
   }
    .form-post__buttons {
-    margin-top: 67px;
+    margin-top: 35px;
     margin-left: 47px;
    }
+   .form-post__btn {
+    width: 266px;
+
+}
+.form-post__btn--disabled {
+   width: 266px;
+   margin-top: 23px;
+
+}
 }
 @media (min-width: @desk-width) {
   .form-post {
@@ -71,11 +89,17 @@ opacity: 0.1;
 }
  .form-post__buttons {
   flex-direction: row;
+  width: 410px;
+  justify-content: space-between;
    margin-top: 67px;
     margin-left: 90px;
  }
  .form-post__btn--disabled {
   margin-top: 0;
+ }
+ .form-post__btn {
+  width: 183px;
+  height: 55px;
  }
 
 }

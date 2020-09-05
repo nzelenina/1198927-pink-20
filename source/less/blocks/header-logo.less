@@ -1,0 +1,42 @@
+.header-logo{
+fill: #ffffff;
+position: relative;
+left: -53px;
+top:-13px;
+}
+
+.header-logo:hover{
+fill: @purp;
+}
+.header-logo__point,
+.header-logo__glasses1,
+
+.header-logo__glasses2,
+.header-logo__stars
+{
+  display: none;
+}
+@media (min-width: @tab-width) {
+  .header-logo{
+fill: #ffffff;
+position: relative;
+left: 0;
+top:0;
+}
+
+.header-logo__glasses1,
+{
+  display: block;
+}
+}
+@media (min-width: @desk-width) {
+.header-logo__point,
+.header-logo__glasses2,
+.header-logo__stars
+{
+  display: block;
+}
+.header-logo__glasses1 {
+  display: none;
+}
+}

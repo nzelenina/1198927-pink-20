@@ -27,6 +27,7 @@ text-align: left;
   position: relative;
 }
 
+
 .app__label:last-child {
   margin-bottom: 54px;
 }
@@ -77,6 +78,9 @@ text-align: left;
   .app__circle-2:active,
    .app__circle-3:active {
   border: 2px solid @purp;
+}
+input[type="radio"]:focus + .app__label{
+  border: 2px solid @grey;
 }
 
 input[type="radio"]:checked + .app__label::before{

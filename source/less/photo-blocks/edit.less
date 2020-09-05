@@ -46,7 +46,9 @@ fill: @grey;
  .edit__item  {
   display: flex;
   flex-direction: row;
-  min-height: 50px;
+  min-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 7px;
 
   }
   .edit__line  {
@@ -67,11 +69,25 @@ fill: @grey;
    width: 16px;
    height: 16px;
     }
+    .item--disabled .edit__icon-editor-fill,
+.item--disabled .edit__icon-editor-contrast {
+  fill: @purp;
+  opacity: 1;
+}
+.item--disabled .edit__icon-editor-fill:hover,
+.item--disabled .edit__icon-editor-contrast:hover {
+   fill: @grey;
+  opacity: 0.5;
+}
+    .item--disabled .edit__icon-editor-fill:active,
+.item--disabled .edit__icon-editor-contrast:active {
+
+}
 }
 @media (min-width: @desk-width) {
    .edit {
     flex-direction: column;
-
+width: 410px;
   margin-left: 90px;
  }
  .edit__item  {
@@ -91,4 +107,7 @@ fill: @grey;
    width: 32px;
    height: 32px;
     }
+      .edit__line {
+        width: 404px;
+      }
 }

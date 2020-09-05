@@ -38,7 +38,8 @@ display: block;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 800px;
+    text-transform: capitalize;
+    width: 607px;
     padding-top: 48px;
     height: 57px;
     margin-right: 130px;
@@ -49,16 +50,26 @@ display: block;
     padding-top: 0;
     border: none;
     box-shadow: none;
-    margin-right: 78px;
+
   }
-  .nav-list__item:last-child {
-    width: 200px;
-    margin-right: 0;
-  }
+
   .nav-list__link {
     font-family: @norm;
     display: block;
     padding-bottom: 5px;
+  }
+  .nav-list__item:first-child {
+    width: 72px;
+  }
+  .nav-list__item:nth-child(2){
+    width: 109px;
+  }
+  .nav-list__item:nth-child(3) {
+    width: 72px;
+  }
+  .nav-list__item:nth-child(4) {
+    width: 140px;
+    margin-right: 0;
   }
   .nav-list__link--visited {
     border-bottom: 1px solid #ffffff;

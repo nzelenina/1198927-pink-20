@@ -10,6 +10,7 @@ margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   text-align: left;
+
   min-height: 144px;
   margin: 0 20px 0 20px;
    background-color: #f2f2f2;
@@ -61,15 +62,19 @@ margin: 0 20px 0 20px;
  flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
+
 margin: 0 20px 0 20px;
 }
 .posts__description {
-  flex-wrap: nowrap;
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
   margin:0;
   height: 124px;
   padding-top: 31px;
 }
 .posts__text {
+  width: 100%;
   margin:0;
 }
 .posts__like{
@@ -78,13 +83,14 @@ margin-top: auto;
   }
 .posts__like1{
   order: 2;
+
 }
 .posts__text1{
-
 order: 3;
+width: 100%;
   }
 .posts__item {
-width: 49%;
+  width: 49%;
 }
 .item--photo-day {
   width: 100%;
@@ -108,6 +114,15 @@ width: 49%;
  .posts__img {
  width: 100%;
  }
+ .item--photo-day .likes {
+  padding-left: 49%;
+  width: 20%;
+
+  margin-right: 0 auto;
+   }
+  .item--photo-day .gh {
+    width: 30%;
+  }
 }
  @media ( min-width: @desk-width){
 
@@ -116,10 +131,10 @@ width: 49%;
   }
 
   .item--photo-day .gh {
-    width: 40%;
+    width: 143px;
   }
   .item--photo-day .likes {
-    padding-left: 475px;
+    padding-left: 659px;
     width: 150px;
     height: 17px;
 }
