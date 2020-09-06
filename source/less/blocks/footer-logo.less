@@ -1,41 +1,56 @@
 .footer-logo {
+  display: block;
+  margin: 0 auto;
   margin-top: 41px;
+  width: 146px;
+  height: 30px;
+  z-index: 5;
+
 }
-.footer-logo:hover {
-  fill: @purp;
+.footer-logo__img {
+  width: 100%;
+  position: relative;
 }
 
- .footer-logo:active {
-    fill: #000000;
-    opacity: 0.3;
-  }
-.footer-logo__point,
-.footer-logo__glasses2,
-.footer-logo__stars
-{
+.footer-logo:hover .footer-logo__img{
   display: none;
 }
-.footer-logo__glasses1,
-.footer-logo__glasses2 {
-  fill: @purp;
+.footer-logo:hover::after{
+   content: url("../img/logo/logo-pink-blue-mobile-hover.svg");
+  display: block;
+
+   position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+
 }
 @media (min-width: @tab-width) {
+  .footer-logo {
+  display: block;
+margin: 0 0 0 0;
+  margin-top: 41px;
+  width: 146px;
+  height: 30px;
+  z-index: 5;
+
+}
 
 .footer-logo {
   margin-top: 21px;
 }
 }
 @media (min-width: @desk-width) {
-
-.footer-logo__point,
-.footer-logo__glasses2,
-.footer-logo__stars {
+  .footer-logo:hover::after{
+   content: url("../img/logo/logo-pink-blue-desktop-hover.svg");
   display: block;
+  position: absolute;
+  top: 0px;
+  left: -300px;
+  width: 100%;
 }
 
-.footer-logo__glasses1 {
-  display: none;
-}
+
   .footer-logo {
     display: block;
     margin-top: 38px;
