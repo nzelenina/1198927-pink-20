@@ -1,34 +1,36 @@
 .item--disabled .range {
   position: relative;
   display: none;
-
 }
+
 .range {
   position: relative;
-   margin-top: 39px;
+  margin-top: 39px;
   display: block;
 }
+
 .range__scale {
   width: 240px;
   height: 2px;
   background-color: @grey;
   position: absolute;
 }
-.range__haddle{
-width: 14px;
-height: 14px;
-border-radius: 50%;
-border: 1px solid @purp;
-position: absolute;
-top: -7px;
-left: 180px;
-z-index: 1;
-background-color: #ffffff;
+
+.range__haddle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid @purp;
+  position: absolute;
+  top: -7px;
+  left: 180px;
+  z-index: 1;
+  background-color: #ffffff;
 }
+
 .range__haddle:active {
   background-color: @purp;
 }
-
 @media (min-width: @tab-width) {
   .range {
     margin-left: 32px;
@@ -36,15 +38,17 @@ background-color: #ffffff;
     position: relative;
     top: -30px;
   }
-  .item--disabled .range  {
+
+  .item--disabled .range {
     display: block;
   }
-.range__scale {
-  width: 202px;
-  height: 2px;
-  background-color: @grey;
-  position: absolute;
-}
+
+  .range__scale {
+    width: 202px;
+    height: 2px;
+    background-color: @grey;
+    position: absolute;
+  }
 }
 @media (min-width: @desk-width) {
   .range {
@@ -53,7 +57,8 @@ background-color: #ffffff;
     position: relative;
     top: -30px;
   }
-  .range__scale{
+
+  .range__scale {
     width: 335px;
   }
 }

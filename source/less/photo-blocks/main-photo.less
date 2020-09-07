@@ -4,8 +4,6 @@
   font-size: 24px;
   height: 237px;
   width: 100%;
-
-  margin-top: 0px;
   margin: 0 auto;
   padding-top: 102px;
   box-sizing: border-box;
@@ -13,85 +11,75 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .main-photo__text1 {
- font-family: @norm;
+  font-family: @norm;
   font-size: 14px;
   color: @grey;
   width: 280px;
   height: 70px;
-  margin: 0 auto;
-   margin-top: 54px;
-   margin-bottom: 54px;
+  margin: 54px auto;
 }
+
 .main-photo__text2 {
-   font-family: @norm;
+  font-family: @norm;
   font-size: 14px;
   color: @grey;
   width: 280px;
   height: 71px;
-  margin: 0 auto;
-   margin-top: 49px;
-   margin-bottom: 52px;
-
+  margin: 49px auto 52px;
 }
+
 .main-photo__list {
   padding-left: 0;
 }
- @media ( min-width: @tab-width) {
+@media (min-width: @tab-width) {
   .main-photo__text2 {
-   font-family: @norm;
-  font-size: 14px;
-  color: @grey;
-  width: 422px;
-  height: 43px;
-  margin: 0 auto;
-   margin-top: 49px;
-   margin-bottom: 52px;
-}
-.main-photo__text1 {
- font-family: @norm;
-  font-size: 18px;
-  color: @grey;
-  width: 588px;
-  height: 70px;
-  margin: 0 auto;
-   margin-top: 5px;
-   margin-bottom: 54px;
-}
-  .main-photo__title {
-  font-family: @light;
-  font-weight: 300;
-  font-size: 50px;
-  min-height: 446px;
-  width: 100%;
-  padding-left: 120px;
-  padding-right: 120px;
-  margin-top: 0px;
-  margin: 0 auto;
-  padding-top: 102px;
-  color: #ffffff;
-  background-image: url("../img/bg-back-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    font-family: @norm;
+    font-size: 14px;
+    color: @grey;
+    width: 422px;
+    height: 43px;
+    margin: 49px auto 52px;
+  }
 
-   position: relative;
-    top:-110px;
+  .main-photo__text1 {
+    font-family: @norm;
+    font-size: 18px;
+    color: @grey;
+    width: 588px;
+    height: 70px;
+    margin: 5px auto 54px;
+  }
+
+  .main-photo__title {
+    font-family: @light;
+    font-weight: 300;
+    font-size: 50px;
+    min-height: 446px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0 auto;
+    padding-top: 102px;
+    color: #ffffff;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -110px;
     padding-top: 200px;
-      }
- }
- @media ( min-width: @desk-width) {
-  .main-photo__text2 {
-   font-family: @norm;
-  font-size: 18spx;
-  color: @grey;
-  width: 422px;
-  height: 43px;
-  margin: 0 auto;
-   margin-top: 49px;
-   margin-bottom: 52px;
-   padding:0 60px 0 60px;
+  }
 }
+@media (min-width: @desk-width) {
+  .main-photo__text2 {
+    font-family: @norm;
+    font-size: 18spx;
+    color: @grey;
+    width: 422px;
+    height: 43px;
+    margin: 49px auto 52px;
+    padding: 0 60px;
+  }
 }

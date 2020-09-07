@@ -1,5 +1,4 @@
 .main__map {
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,6 +8,7 @@
 .map__img {
   width: 100%;
 }
+
 .map__marker {
   display: none;
   position: absolute;
@@ -16,7 +16,6 @@
   height: 32px;
   top: 66px;
   left: 107px;
-
 }
 @media (max-width: @tab-width) {
   .map::before {
@@ -28,8 +27,7 @@
     left: 0;
     z-index: 2;
     background-image: url("../img/bg-triangle-white.svg");
-
-      transform: scale(-1,1);
+    transform: scale(-1,1);
   }
 
   .map::after {
@@ -41,7 +39,6 @@
     left: 50%;
     z-index: 2;
     background-image: url("../img/bg-triangle-white.svg");
-
   }
 }
 @media (min-width: @tab-width) {
@@ -59,11 +56,11 @@
   }
 }
 @media (min-width: @desk-width) {
-.map__marker {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: 221px;
-  left: 568px;
-}
+  .map__marker {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 221px;
+    left: 568px;
+  }
 }

@@ -1,14 +1,15 @@
 .username {
-display: flex;
-flex-direction: column;
-}
-.username__container{
   display: flex;
   flex-direction: column;
 }
+
+.username__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .username__label,
 .username__label-name {
-
   display: block;
   margin-top: 24px;
   margin-left: 43px;
@@ -20,72 +21,64 @@ flex-direction: column;
   color: @purp;
   text-transform: uppercase;
 }
+
 .username__input {
-display: flex;
-font-size: 18px;
-font-family: @norm;
-color: @grey;
+  display: flex;
+  font-size: 18px;
+  font-family: @norm;
+  color: @grey;
   padding-left: 20px;
-  margin: 2px 20px 24px 20px;
+  margin: 2px 20px 24px;
   height: 64px;
   box-sizing: border-box;
   border: 2px solid #E5E5E5;
-border-radius: 1px;
+  border-radius: 1px;
 }
+
 .username__input:active {
-   border: 2px solid @purp;
+  border: 2px solid @purp;
 }
 @media (min-width: @tab-width) {
   .username {
     display: flex;
     flex-direction: column;
-
     margin-top: 82px;
   }
-  .username__container{
-  display: flex;
-  flex-direction: row;
 
+  .username__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .username__label {
+    margin-right: 20px;
+  }
+
+  .username__label-name {
+    width: 37px;
+    margin-right: 20px;
+  }
+
+  .username__input {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: auto;
+  }
 }
-.username__label {
-  margin-right: 20px;
+@media (min-width: @desk-width) {
+  .username {
+    justify-content: space-between;
+    height: 293px;
+    margin-top: 0;
+    padding-top: 5px;
+  }
+
+  .username__input {
+    margin: 10px 74px 0 20px;
+  }
+
+  .username__label,
+  .username__label-name {
+    margin-left: 0;
+  }
 }
-.username__label-name {
-  width: 37px;
-   margin-right: 20px;
-}
-.username__input {
-width: 100%;
-
- margin-right: 20px;
- margin-left: auto;
-}
-}
-@media (min-width: @desk-width){
-.username{
-  justify-content: space-between;
-  height: 293px;
-  margin-top: 0;
-  padding-top: 5px;
-}
-.username__input  {
-  margin: 10px 74px 0px 20px;
-
-}
-.username__label,
-.username__label-name
- {
-  margin-left: 0px;
-}
-
-
-}
-
-
-
-
-
-
-
-
-

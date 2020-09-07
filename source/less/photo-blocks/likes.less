@@ -1,19 +1,22 @@
 .likes {
   position: relative;
 }
-.likes__text,
-.likes__number {
+
+.likes__number,
+.likes__text {
   font-size: 12px;
   font-family: @norm;
   color: @purp;
 }
+
 .likes__text {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .likes__number {
   margin-left: 5px;
 }
- @media ( min-width: @tab-width) {
+@media (min-width: @tab-width) {
   .likes {
     display: flex;
     flex-direction: row;
@@ -23,21 +26,21 @@ text-transform: uppercase;
   .likes__text {
     order: 1;
   }
+
   .likes__number {
     order: 2;
   }
+
   .likes__link {
     order: 3;
     display: block;
-margin-right: 20px;
-margin-left: auto;
-margin-top: -2px;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: -2px;
   }
-
- }
- @media ( min-width: @desk-width) {
-  .likes__link{
-margin-right: 29px;
-
- }
+}
+@media (min-width: @desk-width) {
+  .likes__link {
+    margin-right: 29px;
+  }
 }

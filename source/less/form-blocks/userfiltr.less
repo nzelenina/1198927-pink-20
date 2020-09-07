@@ -1,26 +1,26 @@
 .userfiltr {
   background-color: #f2f2f2;
-margin-top: 20px;
-display: flex;
-flex-direction: column;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
 .userfiltr__title {
-  margin:0 auto;
-  margin-top: 34px;
+  margin: 34px auto 0;
   width: 218px;
   height: 35px;
   font-size: 14px;
   font-family: @norm;
   color: @purp;
-
 }
- @media ( min-width: @tab-width){
+@media (min-width: @tab-width) {
   .userfiltr {
     min-height: 569px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    margin: 65px 22px 0 22px;
+    margin: 65px 22px 0;
   }
+
   .userfiltr__title {
     position: relative;
     background-color: #ffffff;
@@ -28,17 +28,14 @@ flex-direction: column;
     top: -44px;
     z-index: 1;
     text-transform: uppercase;
-
-
   }
-
- }
- @media ( min-width: @desk-width) {
-   .userfiltr {
+}
+@media (min-width: @desk-width) {
+  .userfiltr {
     width: 936px;
     min-height: 228px;
-     margin: 65px 0px 0 0px;
-     display: flex;
-     flex-direction: column;
-   }
- }
+    margin: 65px 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

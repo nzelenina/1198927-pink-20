@@ -1,9 +1,9 @@
 .main-form-comment {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 0 20px;
-  margin-top: 52px;
+  margin: 52px 20px 0;
 }
+
 .main-form-comment__btn {
   font-family: @bold;
   font-size: 18px;
@@ -15,47 +15,55 @@
   border: 2px solid @green;
   border-radius: 1px;
 }
+
 .main-form-comment__btn:hover {
   background-color: @darkgreen;
 }
+
 .main-form-comment__btn:active {
   opacity: 0.3;
   border: none;
 }
+
 .main-form-comment__star {
   color: @purp;
 }
+
 .main-form-comment__text {
   margin-top: 42px;
   font-family: @norm;
   font-size: 14px;
-
 }
+
 .main-form-comment__text-big {
   display: none;
 }
 @media (min-width: @tab-width) {
-  .main-form-comment  {
+  .main-form-comment {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;
   }
-  .main-form-comment__text{
+
+  .main-form-comment__text {
     margin-top: 19px;
   }
+
   .main-form-comment__btn {
     margin: 0;
   }
-    }
+}
 @media (min-width: @desk-width) {
   .main-form-comment {
-    margin: 20px 132px 0 132px;
+    margin: 20px 132px 0;
     width: 936px;
   }
-.main-form-comment__text {
-  display: none;
-}
-.main-form-comment__text-big {
-  display: block;
-}
+
+  .main-form-comment__text {
+    display: none;
+  }
+
+  .main-form-comment__text-big {
+    display: block;
+  }
 }

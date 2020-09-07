@@ -1,9 +1,10 @@
 .app {
   background-color: #f2f2f2;
- display: flex;
- flex-direction: column;
- position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
+
 .app__title {
   font-size: 14px;
   font-family: @norm;
@@ -11,22 +12,21 @@
   text-transform: uppercase;
   width: 178px;
   height: 29px;
-  margin: 0 auto;
-  margin-top: -10px;
+  margin: -10px auto 0;
   padding-top: 42px;
 }
+
 .app__label {
   font-family: @norm;
   font-size: 18px;
   color: @grey;
   display: block;
   margin-top: 52px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-left: 90px;
-text-align: left;
+  text-align: left;
   position: relative;
 }
-
 
 .app__label:last-child {
   margin-bottom: 54px;
@@ -36,7 +36,7 @@ text-align: left;
   position: absolute;
   top: -10px;
   left: 22px;*/
-  .app__circle-1 {
+.app__circle-1 {
   width: 37px;
   height: 37px;
   position: absolute;
@@ -45,9 +45,9 @@ text-align: left;
   border-radius: 50%;
   border: 2px solid #E5E5E5;
   background-color: #ffffff;
-
 }
-  .app__circle-2 {
+
+.app__circle-2 {
   width: 37px;
   height: 37px;
   position: absolute;
@@ -56,9 +56,9 @@ text-align: left;
   border-radius: 50%;
   border: 2px solid #E5E5E5;
   background-color: #ffffff;
-
 }
-  .app__circle-3 {
+
+.app__circle-3 {
   width: 37px;
   height: 37px;
   position: absolute;
@@ -67,25 +67,26 @@ text-align: left;
   border-radius: 50%;
   border: 2px solid #E5E5E5;
   background-color: #ffffff;
-
 }
- .app__circle-1:hover,
-  .app__circle-2:hover,
-   .app__circle-3:hover {
+
+.app__circle-1:hover,
+.app__circle-2:hover,
+.app__circle-3:hover {
   border: 2px solid @grey;
 }
- .app__circle-1:active,
-  .app__circle-2:active,
-   .app__circle-3:active {
+
+.app__circle-1:active,
+.app__circle-2:active,
+.app__circle-3:active {
   border: 2px solid @purp;
 }
-input[type="radio"]:focus + .app__label{
+
+input[type="radio"]:focus + .app__label {
   border: 2px solid @grey;
 }
 
-input[type="radio"]:checked + .app__label::before{
-
-content: "";
+input[type="radio"]:checked + .app__label::before {
+  content: "";
   position: absolute;
   top: 6px;
   left: 33px;
@@ -94,88 +95,72 @@ content: "";
   border-radius: 50%;
   z-index: 1;
   background-color: @purp;
-
 }
 @media (min-width: @tab-width) {
   .app {
     background-color: #ffffff;
     min-height: 295px;
-    margin: 0 22px 0 22px;
-    margin-top: 65px;
-
-  border: 2px solid  #e5e5e5;
-
+    margin: 65px 22px 0;
+    border: 2px solid #e5e5e5;
   }
-.app__title {
- padding-top: 0;
- position: relative;
-  width: 368px;
-  height: 38px;
-  background-color: #ffffff;
-  z-index: 1;
- margin: 0 auto;
- top: -10px;
-}
-}
 
+  .app__title {
+    padding-top: 0;
+    position: relative;
+    width: 368px;
+    height: 38px;
+    background-color: #ffffff;
+    z-index: 1;
+    margin: 0 auto;
+    top: -10px;
+  }
+}
 @media (min-width: @desk-width) {
   .app {
-      height:  295px;
-      width: 473px;
-    margin: 0 0 0 0;
-     }
+    height: 295px;
+    width: 473px;
+    margin: 0;
+  }
+
   .app__label {
     padding-left: 133px;
   }
-    .app__circle-1 {
-  width: 37px;
-  height: 37px;
-  position: absolute;
-  bottom: 197px;
-  left: 74px;
-  border-radius: 50%;
-  border: 2px solid #E5E5E5;
-  background-color: #ffffff;
 
-}
+  .app__circle-1 {
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    bottom: 197px;
+    left: 74px;
+    border-radius: 50%;
+    border: 2px solid #E5E5E5;
+    background-color: #ffffff;
+  }
+
   .app__circle-2 {
-  width: 37px;
-  height: 37px;
-  position: absolute;
-  bottom: 120px;
-  left: 74px;
-  border-radius: 50%;
-  border: 2px solid #E5E5E5;
-  background-color: #ffffff;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    bottom: 120px;
+    left: 74px;
+    border-radius: 50%;
+    border: 2px solid #E5E5E5;
+    background-color: #ffffff;
+  }
 
-}
   .app__circle-3 {
-  width: 37px;
-  height: 37px;
-  position: absolute;
-  bottom: 43px;
-  left: 74px;
-  border-radius: 50%;
-  border: 2px solid #E5E5E5;
-  background-color: #ffffff;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    bottom: 43px;
+    left: 74px;
+    border-radius: 50%;
+    border: 2px solid #E5E5E5;
+    background-color: #ffffff;
+  }
 
+  input[type="radio"]:checked + .app__label::before {
+    left: 89px;
+    top: 1px;
+  }
 }
-input[type="radio"]:checked + .app__label::before{
-  left: 89px;
-top: 1px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

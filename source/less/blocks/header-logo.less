@@ -1,4 +1,4 @@
-.header-logo{
+.header-logo {
   display: block;
   position: absolute;
   width: 74px;
@@ -6,15 +6,16 @@
   top: 23px;
   left: 22px;
 }
-.header-logo__img{
-  width: 100%;
 
+.header-logo__img {
+  width: 100%;
 }
-.header-logo:hover .header-logo__img{
+
+.header-logo:hover .header-logo__img {
   display: none;
 }
 
-.header-logo:hover::after{
+.header-logo:hover::after {
   content: url("../img/logo/logo-pink-white-hover-mobile.svg");
   display: block;
   position: absolute;
@@ -22,26 +23,27 @@
   left: 0;
   width: 100%;
 }
-
 @media (min-width: @tab-width) {
-  .header-logo{
+  .header-logo {
     width: 145px;
     height: 40px;
     top: 27px;
     left: 33px;
   }
-  .header-logo:hover::after{
+
+  .header-logo:hover::after {
     content: url("../img/logo/logo-pink-white-hover-tablet.svg");
-}
+  }
 }
 @media (min-width: @desk-width) {
-  .header-logo{
+  .header-logo {
     width: 147px;
     height: 40px;
     top: 26px;
     left: -2px;
   }
-  .header-logo:hover::after{
+
+  .header-logo:hover::after {
     content: url("../img/logo/logo-pink-white-hover-desktop.svg");
-}
+  }
 }
