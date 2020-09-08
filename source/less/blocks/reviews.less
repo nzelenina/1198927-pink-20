@@ -13,21 +13,24 @@
 
 .reviews__list {
   z-index: 2;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin: 0 auto 34px;
-  padding: 0;
+ display: flex;
+ flex-direction: row;
+ position: relative;
+ margin: 0 auto 22px;
+ padding: 0;
 }
 
 .reviews__item {
   display: none;
+  padding: 43px 11px 0;
 }
 
 .reviews__title {
-  font-family: @bold;
+   font-family: @bold;
   font-size: 18px;
   color: #000000;
+  padding: 0;
+  margin: 0;
 }
 
 .reviews__text {
@@ -41,8 +44,8 @@
 .btn-review-1:checked ~ .reviews__list .review-1,
 .btn-review-2:checked ~ .reviews__list .review-2,
 .btn-review-3:checked ~ .reviews__list .review-3 {
-  display: flex;
-  flex-direction: column;
+display: flex;
+  flex-direction: column;;
 }
 
 .reviews__slider-control {
@@ -51,19 +54,19 @@
   margin: 0 auto;
 }
 
-.reviews__slider-control label {
-  width: 6px;
+.reviews__slider-control label{
+   width: 6px;
   height: 6px;
   background-color: @grey;
   opacity: 0.3;
   border-radius: 50%;
   cursor: pointer;
-  margin-right: 19px;
+  margin-right: 10px;
 }
 
 .btn-review-1:checked ~ .reviews__slider-control label[for="btn-review-1"],
 .btn-review-2:checked ~ .reviews__slider-control label[for="btn-review-2"],
-.btn-review-3:checked ~ .reviews__slider-control label[for="btn-review-3"] {
+.btn-review-3:checked ~ .reviews__slider-control label[for="btn-review-3"]{
   width: 6px;
   height: 6px;
   position: relative;
@@ -78,51 +81,51 @@
 .reviews__arrow-right {
   display: none;
 }
+
 @media (min-width: @tab-width) {
-  .reviews__title {
-    order: 2;
-    margin-bottom: 0;
+ .reviews__title {
+order: 2;
+margin-bottom: 0;
   }
 
   .reviews__list {
-    margin: 109px 20px 0;
+    margin: 109px 20px 0 20px;
   }
 
-  .reviews__sign {
+   .reviews__sign {
     order: 3;
-    display: block;
-    font-family: @norm;
-    font-size: 14px;
-  }
+      display: block;
+      font-family: @norm;
+      font-size: 14px;
+    }
 
   .reviews__text {
     order: 1;
     font-size: 18px;
-    padding: 0;
-    min-width: 620px;
+   padding: 0;
+   min-width: 620px;
   }
 
   .reviews__slider-control {
-    display: flex;
-    flex-direction: row;
-    margin: 20px auto 0;
-  }
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 }
 @media (min-width: @desk-width) {
-  .reviews {
+  .reviews{
+
     min-height: 405px;
     position: relative;
   }
-
   .reviews__list {
     margin-top: 193px;
   }
-
   .reviews__text {
     width: 688px;
     height: 73px;
   }
-
   .reviews:after {
     content: "";
     position: absolute;
@@ -132,52 +135,51 @@
     height: 63px;
     background-image: url("../img/icon-quotes.svg");
     background-size: cover;
-  }
 
-  .reviews__arrow-left {
-    display: block;
-    position: absolute;
+    }
+    .reviews__arrow-left {
+      display: block;
+       position: absolute;
     top: 227px;
     left: 130px;
     width: 22px;
     height: 41px;
     z-index: 3;
     opacity: 0.3;
-  }
-
-  .reviews__arrow-right {
-    display: block;
+    }
+    .reviews__arrow-right {
+      display: block;
     position: absolute;
-    top: 227px;
-    right: 130px;
+      top: 227px;
+    right:  130px;
     width: 22px;
     height: 41px;
     z-index: 3;
     opacity: 0.3;
   }
-
-  .reviews__arrow-left:hover,
-  .reviews__arrow-right:hover {
+   .reviews__arrow-left:hover ,
+   .reviews__arrow-right:hover{
     opacity: 1;
-  }
 
-  .reviews__arrow-left:focus,
-  .reviews__arrow-right:focus {
+   }
+
+   .reviews__arrow-left:focus,
+   .reviews__arrow-right:focus {
     border: 2px solid #000000;
     fill: red;
-  }
+   }
 
-  .reviews__item {
-    margin: 0 auto;
-  }
+    .reviews__item{
+        margin: 0 auto;
+    }
+    .reviews__slider-control {
+      display: none;
+    }
+    .reviews__text {
+      width: 688px;
+      height: 73px;
+      font-size: 18px;
 
-  .reviews__slider-control {
-    display: none;
-  }
+    }
 
-  .reviews__text {
-    width: 688px;
-    height: 73px;
-    font-size: 18px;
   }
-}
