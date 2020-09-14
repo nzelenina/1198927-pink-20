@@ -1,8 +1,17 @@
 .bullits {
   display: flex;
   flex-direction: row;
-  margin: 45px auto 46px;
+  margin: 29px auto 0;
   padding-left: 0;
+  justify-content: center;
+}
+
+.bullits__item {
+  margin-right: 15px;
+}
+
+.bullits__item:last-child {
+  margin-right: 0;
 }
 
 .bullits__link {
@@ -13,7 +22,6 @@
   border-radius: 50%;
   background-color: @grey;
   opacity: 0.3;
-  margin-right: 19px;
 }
 
 .bullits__link--active {
@@ -28,6 +36,7 @@
   position: relative;
   bottom: 2px;
 }
+
 @media (min-width: @tab-width) {
   .bullits {
     display: none;

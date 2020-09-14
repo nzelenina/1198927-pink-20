@@ -1,53 +1,122 @@
 .description {
-
+  overflow: hidden;
   position: relative;
+  padding-top: 40px;
 }
+
+.description::after {
+  content: "";
+  display: block;
+  width: 152px;
+  height: 278px;
+  background-image: url(../img/iPhone-screen-mobile@1x.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 .description__text {
   font-family: @light;
   font-weight: 300;
   font-size: 24px;
   color: @grey;
+  padding: 0;
+  margin: 0;
+  line-height: 29px;
+  margin: 0 0 29px;
 }
-.description__wrapper {
 
-  padding-bottom: 70px;
-  min-height: 170px;
+.description__text:last-child {
+  margin-bottom: 34px;
 }
+
+.description__wrapper {
+  padding-bottom: 0;
+}
+
 .description__img-desk {
   display: none;
 }
-@media (min-width: @tab-width){
-  .description__text {
-    margin-top: -50px;
-    font-size: 40px;
-    margin-bottom: 0px;
-  }
-    .description__text:last-child {
-      width: 488px;
-       margin: 0 auto;
-    padding: 0 100px 0 100px;
-    }
+
+.description__bg-decor {
+  width: 100%;
+  display: block;
+  background: #f2f2f2;
+  padding-bottom: 54px;
 }
+
+@media (min-width: @tab-width) {
+  .description {
+    padding-top: 0;
+    min-height: 481px;
+  }
+
+  .description::after {
+    content: "";
+    display: block;
+    width: 268px;
+    height: 481px;
+    background-image: url(../img/iPhone-screen-3-tablet@1x.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    z-index: 2;
+    transform: translateX(0);
+  }
+
+  .description__text {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .description__text:last-child {
+    width: 457px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .description__wrapper {
+    padding-bottom: 32px;
+  }
+
+  .description__bg-decor {
+    padding-bottom: 0;
+    margin-bottom: -24px;
+  }
+}
+
 @media (min-width: @desk-width) {
   .description__text {
     font-size: 50px;
+    line-height: 68px;
   }
+
+  .description__list-container {
+    background: #f2f2f2;
+    position: relative;
+  }
+
   .description__text:last-child {
     width: 680px;
     margin: 0 auto;
     padding: 0 50px 0 50px;
   }
+
   .description {
     display: flex;
     flex-direction: column;
-
-   margin-top: 438px;
-   min-height: 715px;
-
+    margin-top: 63px;
+    min-height: 715px;
   }
-  .description__wrapper {
 
-  padding-bottom: 70px;
-  min-height: 170px;
-}
+  .description__wrapper {
+    padding-bottom: 51px;
+    min-height: 170px;
+  }
 }

@@ -1,49 +1,80 @@
- .usertext {
+.usertext {
   display: flex;
   flex-direction: column;
- }
- .usertext__title {
+  background-color: #ffffff;
+}
+
+.usertext__title {
   font-family: @norm;
   font-size: 14px;
   color: @purp;
   text-transform: uppercase;
- }
- .usertext__emotion {
-  display: flex;
-  min-width: 276px;
-  min-height: 189px;
+  margin-top: 37px;
+  margin-bottom: 16px;
+}
 
-  font-family: @norm;
+.usertext__emotion {
+  display: flex;
+  min-width: 254px;
+  min-height: 182px;
+  padding-top: 13px;
+  padding-left: 21px;
   font-size: 18px;
- border: 2px solid #e5e5e5;
-  margin: 0 20px 0 20px;
- }
+  border: 2px solid #e5e5e5;
+  margin: 0 20px -4px;
+  line-height: 30px;
+}
+
 @media (min-width: @tab-width) {
   .usertext {
-  display: flex;
-  flex-direction: column;
-  margin: 65px 22px 0 22px;
-   border: 2px solid #e5e5e5;
-}
- .usertext__emotion {
-  min-height: 189px;
-  font-family: @norm;
-  font-size: 18px;
-  color: @grey;
-  margin: 0 60px 50px 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 65px 22px 0;
+    border: 2px solid #e5e5e5;
+  }
 
- }
- .usertext__title {
-  font-family: @norm;
-  font-size: 14px;
-  color: @purp;
+  .usertext__emotion {
+    height: 174px;
+    min-height: auto;
+    font-size: 18px;
+    color: #283645;
+    margin: 27px 60px 50px;
+    line-height: 30px;
+  }
+
+  .usertext__emotion::placeholder {
+    font-size: 18px;
+    color: #283645;
+    line-height: 30px;
+    font-family: OpenSans;
+  }
+
+  .usertext__title {
+    font-family: @norm;
+    font-size: 14px;
+    color: @purp;
     width: 260px;
-  height: 38px;
-  background-color: #ffffff;
-  z-index: 1;
- margin: 0 auto;
- padding-top: 0;
- position: relative;
- top: -10px;
- }
+    height: auto;
+    background-color: #ffffff;
+    z-index: 1;
+    margin: 0 auto;
+    padding-top: 0;
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .usertext {
+    margin: 65px 0 50px;
+    width: 936px;
+  }
+
+  .usertext__emotion {
+    width: 790px;
+    height: 109px;
+    padding-left: 20px;
+    min-height: 109px;
+    margin: 23px 60px 43px;
+  }
 }

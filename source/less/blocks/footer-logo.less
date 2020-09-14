@@ -1,0 +1,51 @@
+.footer-logo {
+  display: block;
+  margin: 0 auto 0;
+  width: 146px;
+  height: 45px;
+  z-index: 5;
+  position: relative;
+}
+
+.footer-logo__img {
+  width: 100%;
+}
+
+.footer-logo:hover .footer-logo__img {
+  display: none;
+}
+
+.footer-logo:hover::after {
+  content: url("../img/logo/logo-pink-blue-mobile-hover.svg");
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: @tab-width) {
+  .footer-logo {
+    display: block;
+    width: 146px;
+    height: 46px;
+    z-index: 5;
+    margin: 0;
+    margin-right: 76px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .footer-logo:hover::after {
+    content: url("../img/logo/logo-pink-blue-desktop-hover.svg");
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-logo {
+    display: block;
+  }
+}

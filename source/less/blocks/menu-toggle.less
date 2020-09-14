@@ -1,18 +1,25 @@
 .menu-toggle {
   display: block;
-    padding: 0;
-    width: 50px;
-    height: 24px;
-    background: inherit;
-    border: 0;
-    position: absolute;
-    top: -45px;
-    right: 20px;
-    cursor: pointer;
+  padding: 0;
+  width: 50px;
+  height: 24px;
+  background: inherit;
+  border: 0;
+  position: absolute;
+  top: -39px;
+  right: 20px;
+  cursor: pointer;
 }
 
+.header--nav-opened .menu-toggle {
+  top: -46px;
+  width: 25px;
+  right: 19px;
+}
 
-
+.menu-toggle:focus {
+  outline: none;
+}
 
 .menu-toggle::before {
   position: absolute;
@@ -37,6 +44,7 @@
 }
 
 .header--nav-opened .menu-toggle {
+
   &::after,
   &::before {
     top: 10px;
@@ -68,6 +76,7 @@
     opacity: 0.3;
   }
 }
+
 @media (min-width: @tab-width) {
   .menu-toggle {
     display: block;
@@ -77,11 +86,17 @@
     background: inherit;
     border: none;
     position: absolute;
-    bottom: 38px;
-    right: 20px;
+    top: -63px;
+    right: 29px;
     cursor: pointer;
   }
+
+  .header--nav-opened .menu-toggle {
+    top: -65px;
+    right: 19px;
+  }
 }
+
 @media (min-width: @desk-width) {
   .menu-toggle {
     display: none;

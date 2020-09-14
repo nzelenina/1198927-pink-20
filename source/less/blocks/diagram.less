@@ -1,39 +1,47 @@
 .diagram {
   display: none;
 }
+
 @media (min-width: @tab-width) {
   .diagram--off {
     display: none;
   }
-  .diagram {
 
-    display: flex;
-    flex-direction: column;
+  .diagram {
     background-color: #ffffff;
     position: relative;
     margin-top: 48px;
     min-height: 280px;
-    width: 100%;
+    display: block;
+    padding-left: 332px;
+    padding-top: 48px;
   }
-  .diagram:before {
-    content: "";
+
+  .diagram::before {
+    content: "24";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 238px;
-    height: 276px;
-    background-image: url("../img/timer.png");
+    top: 5px;
+    left: 20px;
+    width: 240px;
+    height: 188px;
+    background-image: url(../img/timer.png);
     background-size: cover;
+    font-family: 'OpenSansBold';
+    font-size: 96px;
+    color: #d22856;
+    padding-top: 90px;
   }
-  .diagram:after {
+
+  .diagram::after {
     content: "";
     position: absolute;
-    top: 51px;
-    left: 15px;
-    width: 210px;
-    height: 210px;
+    top: 61px;
+    left: 39px;
+    width: 204px;
+    height: 204px;
     border-radius: 50%;
-    border: 18px solid #D22856;
+    border: 18px solid #d22856;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -43,9 +51,9 @@
     color: #000000;
     line-height: 36px;
     width: 168px;
-    height: 59px;
-    margin-left: 330px;
+    margin: 0 0 10px 0;
     text-align: left;
+
   }
 
   .diagram__text {
@@ -53,20 +61,19 @@
     font-size: 14px;
     line-height: 24px;
     color: @grey;
-    width: 310px;
-    height: 82px;
-    margin-left: 330px;
+    margin: 0 0 12px 0;
     text-align: left;
+    padding-right: 30px;
   }
 
   .diagram__link {
     display: block;
-    margin-top: 24px;
+    margin: 0;
     font-size: 14px;
     font-family: @norm;
     width: 226px;
-    height: 10px;
-    margin-left: 330px;
+    color: @purp;
+    text-decoration: underline;
   }
 
   .diagram__digit {
@@ -75,25 +82,38 @@
     color: @purp;
     position: absolute;
     top: 83px;
-    left: 60px;
+    left: 79px;
   }
 }
+
 @media (min-width: @desk-width) {
   .diagram {
-    margin-top: -50px;
-    min-height: 429px;
+    min-height: 374px;
     background-color: #f2f2f2;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 64px;
   }
+
   .diagram__digit {
     top: 140px;
     left: 213px;
   }
 
   .diagram:before {
+    display: none;
+  }
+
+  .diagram__container {
+    position: relative;
+  }
+
+  .diagram__container::before {
     content: "";
     position: absolute;
-    top: 11px;
-    left: 118px;
+    top: 27px;
+    left: 1px;
     width: 298px;
     height: 345px;
     background-image: url("../img/timer.png");
@@ -101,40 +121,60 @@
   }
 
   .diagram__title {
-    margin-left: 538px;
+    margin-left: 0;
     width: 298px;
-    height: 23px;
     line-height: 30px;
     font-size: 30px;
-    margin-top: 115px;
+    margin-top: 0;
+    margin-bottom: 25px;
   }
+
   .diagram__text {
-    margin-left: 538px;
-    width: 534px;
-    height: 74px;
+    margin: 0;
+    padding: 0 41px 0 0;
+    width: auto;
     font-size: 18px;
-    margin-bottom: 0;
-    margin-top: 37px;
+    line-height: 30px;
   }
+
   .diagram__container {
-    width: 100vw;
+    width: 570px;
     text-align: left;
+    margin: 0 auto;
+    padding-left: 370px;
+    padding-top: 122px;
   }
+
   .diagram__link {
     display: block;
-    margin-left: 538px;
+    margin-left: 0;
     width: 290px;
-    margin-top: 47px;
+    margin-top: 30px;
+    color: @purp;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 30px;
   }
-   .diagram:after {
-    content: "";
+
+  .diagram::after {
+    display: none;
+  }
+
+  .diagram__container::after {
+    content: "24";
     position: absolute;
-    top: 98px;
-    left: 156px;
-    width: 220px;
-    height: 220px;
+    top: 97px;
+    left: 24px;
+    width: 252px;
+    height: 252px;
     border-radius: 50%;
     border: 18px solid #D22856;
     box-sizing: border-box;
+    font-family: 'OpenSansBold';
+    font-size: 120px;
+    color: #d22856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

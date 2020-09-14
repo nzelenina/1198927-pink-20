@@ -1,54 +1,135 @@
-.userfiltr-form {
-
-}
 .userfiltr-form__label {
   position: relative;
   font-family: @norm;
   font-size: 18px;
   color: @grey;
+  line-height: 30px;
   display: block;
   text-align: left;
-  padding-left: 79px;
-  margin-top: 47px;
+  padding-left: 81px;
+  margin-top: 0;
+  margin-bottom: 52px;
+  cursor: pointer;
 }
-input[type="checkbox"] + .userfiltr-form__label::before{
+
+.userfiltr-form__container {
+  margin-top: 42px;
+}
+
+.userfiltr-form__container:last-child .userfiltr-form__label:last-child {
+  margin-bottom: 47px;
+}
+
+input[type="checkbox"] + .userfiltr-form__label::before {
   content: "";
   position: absolute;
   top: 0;
   left: 22px;
-  width: 27px;
-  height: 23px;
-background-color: #ffffff;
+  width: 34px;
+  height: 33px;
+  background-color: #ffffff;
 }
-input[type="checkbox"]:checked + .userfiltr-form__label::before{
+
+input[type="checkbox"] + .userfiltr-form__label:hover::before {
+  border: 2px solid @grey;
+  border-radius: 1px;
+}
+
+input[type="checkbox"] + .userfiltr-form__label:active::before {
+  border: 2px solid @purp;
+  border-radius: 1px;
+}
+
+input[type="checkbox"]:checked + .userfiltr-form__label::before {
   content: "";
   position: absolute;
   top: 0;
   left: 22px;
-  width: 27px;
-  height: 23px;
+  width: 34px;
+  height: 33px;
   background-image: url("../img/tick.png");
   background-position: center;
   background-repeat: no-repeat;
 }
- @media ( min-width: @tab-width) {
-  .userfiltr-form {
 
-  }
-  input[type="checkbox"] + .userfiltr-form__label::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 22px;
-  width: 27px;
-  height: 23px;
-background-color: #ffffff;
-border: 2px solid @light-grey;
+input[type="checkbox"]:focus + .userfiltr-form__label::before {
+  border: 2px solid @grey;
 }
- }
- @media ( min-width: @desk-width) {
+
+@media (min-width: @tab-width) {
+  .userfiltr-form {}
+
+  input[type="checkbox"] + .userfiltr-form__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: 34px;
+    height: 33px;
+    background-color: #ffffff;
+    border: 2px solid @light-grey;
+  }
+
+  .userfiltr-form__container {
+    margin-top: 0;
+  }
+
+  input[type=checkbox]:checked + .userfiltr-form__label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 58px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/tick.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  input[type=checkbox] + .userfiltr-form__label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 58px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+  }
+
+  .userfiltr-form__label {
+    padding-left: 117px;
+  }
+
+  .userfiltr-form__container:last-child .userfiltr-form__label:last-child {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desk-width) {
   .userfiltr-form {
     display: flex;
     flex-direction: row;
+    padding: 39px 57px 0;
+    flex-wrap: wrap;
   }
- }
+
+  .userfiltr-form__container {
+    margin-top: 0;
+    margin-right: 57px;
+  }
+
+  .userfiltr-form__container:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  input[type="checkbox"] + .userfiltr-form__label::before,
+  input[type="checkbox"]:checked + .userfiltr-form__label::before {
+    left: 0;
+    top: -4px;
+  }
+
+  .userfiltr-form__label {
+    padding-left: 58px;
+  }
+}
