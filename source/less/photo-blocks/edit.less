@@ -3,12 +3,17 @@
   flex-direction: row;
   width: 220px;
   justify-content: space-between;
-  margin: 57px auto 0;
+  margin: 37px auto 0;
 }
 
 .edit__item {
   position: relative;
   min-height: 100px;
+}
+
+.edit__item--disabled .range {
+  position: relative;
+  display: none;
 }
 
 .edit__line {
@@ -42,6 +47,7 @@
 @media (min-width: @tab-width) {
   .edit {
     flex-direction: column;
+    margin: 56px auto 0;
   }
 
   .edit__item {
@@ -50,6 +56,10 @@
     min-height: 60px;
     margin-top: 10px;
     margin-bottom: 7px;
+  }
+
+  .edit__item--disabled .range {
+    display: block;
   }
 
   .edit__line {

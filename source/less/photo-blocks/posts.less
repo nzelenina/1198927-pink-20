@@ -4,6 +4,10 @@
   margin-top: 21px;
 }
 
+.posts__imgphone {
+  margin: 20px 20px 0;
+}
+
 .posts__item {
   margin-bottom: 21px;
 }
@@ -81,6 +85,7 @@
 .posts__time {
   font-family: @light;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .posts__img-photo-day {
@@ -92,17 +97,17 @@
   position: relative;
 }
 
-.item--photo-day {
+.posts__item--photo-day {
   width: 100%;
   margin: 0;
 }
 
-.item--photo-day .posts__description {
+.posts__item--photo-day .posts__description {
   margin: 0 20px;
   padding-top: 18px;
 }
 
-.item--photo-day::before {
+.posts__item--photo-day::before {
   content: "панорама дня";
   color: #fff;
   font-size: 12px;
@@ -188,7 +193,7 @@
     margin-bottom: 20px;
   }
 
-  .item--photo-day {
+  .posts__item--photo-day {
     width: 100%;
     margin-bottom: 50px;
     background: none;
@@ -199,7 +204,7 @@
     min-height: 509px;
   }
 
-  .item--photo-day::before {
+  .posts__item--photo-day::before {
     content: "панорама дня";
     font-family: @bold;
     color: #ffffff;
@@ -218,12 +223,12 @@
     width: 100%;
   }
 
-  .item--photo-day .gh {
+  .posts__item--photo-day .gh {
     width: 30%;
     margin-bottom: 3px;
   }
 
-  .item--photo-day .posts__description {
+  .posts__item--photo-day .posts__description {
     margin: 0 20px;
     padding-top: 21px;
     padding-left: 30px;
@@ -236,7 +241,7 @@
 }
 
 @media (min-width: @desk-width) {
-  .item--photo-day::before {
+  .posts__item--photo-day::before {
     content: "панорама дня";
     font-family: @bold;
     color: #ffffff;
@@ -258,11 +263,11 @@
     width: 940px;
   }
 
-  .item--photo-day .gh {
+  .posts__item--photo-day .gh {
     width: auto;
   }
 
-  .item--photo-day .likes {
+  .posts__item--photo-day .likes {
     margin-left: 610px;
     padding-left: 0;
     height: 17px;
@@ -273,19 +278,19 @@
     margin-bottom: 54px;
   }
 
-  .item--photo-day {
+  .posts__item--photo-day {
     width: 100%;
     margin: 0;
     margin-bottom: 50px;
   }
 
-  .item--photo-day .posts__description {
+  .posts__item--photo-day .posts__description {
     width: 886px;
     margin: 0 auto;
     padding: 21px 27px 23px 26px;
   }
 
-  .item--photo-day .posts__text1 {}
+  .posts__item--photo-day .posts__text1 {}
 
 
   .posts__img {
