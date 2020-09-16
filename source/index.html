@@ -4,6 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="./fonts/opensanslight.woff2" as="font">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -19,7 +25,7 @@
         </picture>
       </a>
       <nav class="header__nav nav">
-        <button class=" nav__menu-toggle menu-toggle" type="button">
+        <button class=" nav__menu-toggle menu-toggle" type="button" aria-label="Закрыть/открыть меню">
         </button>
         <ul class="nav__list nav-list">
           <li class="nav-list__item">
@@ -221,8 +227,7 @@
       </ul>
     </section>
     <section class="main__map map">
-     <h3 class="visually-hidden">Карта проезда</h3>
-      <img class="map__decor" src="./img/bg-triangle-white-footer.svg" alt="">
+      <h3 class="visually-hidden">Карта проезда</h3>
       <div class="map__marker">
         <svg class="map__marker-img" width="32" height="32">
           <use xlink:href="./img/sprite.svg#icon-map-marker"></use>

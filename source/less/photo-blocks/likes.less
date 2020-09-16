@@ -1,0 +1,55 @@
+.likes__number,
+.likes__text {
+  font-size: 12px;
+  font-family: @norm;
+  color: @purp;
+}
+
+.likes__link {
+  background: url("../img/icon-heart.svg") no-repeat top left;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  width: 13px;
+  height: 12px;
+}
+
+.likes__text {
+  text-transform: uppercase;
+  margin-left: 16px;
+}
+
+.likes__number {
+  margin-left: 5px;
+}
+
+@media (min-width: @tab-width) {
+
+  .likes__text {
+    order: 1;
+  }
+
+  .likes__number {
+    order: 2;
+  }
+
+  .likes__link-day {
+    order: 3;
+    display: block;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: -2px;
+  }
+
+  .likes__link {
+    position: absolute;
+    right: 27px;
+    bottom: 4px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .likes__link {
+    margin-right: 0;
+  }
+}

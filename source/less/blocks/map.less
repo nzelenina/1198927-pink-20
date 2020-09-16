@@ -1,0 +1,83 @@
+.map {
+  overflow: hidden;
+  height: 336px;
+  margin-top: -93px;
+}
+
+.map__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 126px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 20;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+}
+
+.map__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.map__img-link {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.map__marker {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 191px;
+  left: 145px;
+  z-index: 30;
+}
+
+@media (min-width: @tab-width) {
+  .map {
+    height: 434px;
+    margin-bottom: 21px;
+    margin-top: -61px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .map {
+    margin-top: -17px;
+    height: 540px;
+    margin-bottom: 5px;
+  }
+
+  .map__marker {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 302px;
+    left: 586px;
+  }
+
+  .map::after {
+    width: 1439px;
+    height: 149px;
+  }
+}

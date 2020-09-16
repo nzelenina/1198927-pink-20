@@ -1,0 +1,115 @@
+.main-photo__title {
+  font-family: @light;
+  font-weight: 300;
+  font-size: 24px;
+  height: auto;
+  min-height: 122px;
+  width: 100%;
+  padding: 97px 10px 77px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-image: url("../img/webp/bg-back-mobile@1x.webp");
+  margin: -70px auto 44px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/webp/bg-back-mobile@2x.webp");
+  }
+}
+
+.main-photo__text2 {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 22px;
+  margin-bottom: 42px;
+
+}
+
+.main-photo__text-container {
+  font-family: @norm;
+  font-size: 14px;
+  color: @grey;
+  margin: 0 38px 50px;
+  line-height: 30px;
+}
+
+.main-photo__text--second {
+  display: block;
+}
+
+.main-photo__list {
+  padding-left: 0;
+}
+
+@media (min-width: @tab-width) {
+
+  .main-photo__text-container {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 92px 70px 78px;
+  }
+
+  .main-photo__text--second {
+    display: inline;
+    vertical-align: top;
+  }
+
+  .main-photo__title {
+    font-family: "OpenSansLight";
+    font-weight: 300;
+    font-size: 50px;
+    min-height: 372px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0 auto;
+    color: #ffffff;
+    background-image: url(../img/webp/bg-back-tablet@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -110px;
+    padding-top: 176px;
+    padding-bottom: 127px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/webp/bg-back-tablet@2x.webp");
+    }
+  }
+
+  .main-photo__text2 {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0 auto 69px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .main-photo__text-container {
+    margin: 92px 70px 88px;
+  }
+
+  .main-photo__text--second {
+    display: block;
+  }
+
+  .main-photo__text2 {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+    margin: 8px auto 69px;
+  }
+
+  .main-photo__title {
+    background-image: url("../img/webp/bg-back-desktop@1x.webp");
+    padding: 171px 293px 88px;
+    min-height: 250px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/webp/bg-back-desktop@2x.webp");
+    }
+  }
+}

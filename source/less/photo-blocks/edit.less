@@ -1,0 +1,139 @@
+.edit {
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+  justify-content: space-between;
+  margin: 37px auto 0;
+}
+
+.edit__item {
+  position: relative;
+  min-height: 100px;
+}
+
+.edit__line {
+  display: none;
+  position: absolute;
+  width: 275px;
+  height: 1px;
+  background-color: @grey;
+  opacity: 0.1;
+}
+
+.edit__icon-editor-contrast,
+.edit__icon-editor-crop,
+.edit__icon-editor-fill {
+  fill: @purp;
+  opacity: 1;
+}
+
+.edit__icon-editor-contrast {
+  margin-right: 19px;
+  margin-top: 8px;
+}
+
+.edit__icon-editor-fill {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.edit__icon-editor-crop {
+  margin-top: 2px;
+  margin-left: 6px;
+}
+
+.edit__icon-editor-contrast:hover,
+.edit__icon-editor-crop:hover,
+.edit__icon-editor-fill:hover {
+  fill: @grey;
+  opacity: 0.5;
+}
+
+.edit__item--disabled .edit__icon-editor-contrast,
+.edit__item--disabled .edit__icon-editor-fill {
+  fill: @grey;
+  opacity: 0.3;
+}
+
+@media (min-width: @tab-width) {
+  .edit {
+    flex-direction: column;
+  }
+
+  .edit__item {
+    display: flex;
+    flex-direction: row;
+    min-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  .edit__line {
+    display: block;
+    position: absolute;
+    top: 41px;
+  }
+
+  .edit__icon-editor-crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .edit__icon-editor-fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .edit__icon-editor-contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .edit__item--disabled .edit__icon-editor-contrast,
+  .edit__item--disabled .edit__icon-editor-fill {
+    fill: @purp;
+    opacity: 1;
+  }
+
+  .edit__item--disabled .edit__icon-editor-contrast:hover,
+  .edit__item--disabled .edit__icon-editor-fill:hover {
+    fill: @grey;
+    opacity: 0.5;
+  }
+
+  .edit__item--disabled .edit__icon-editor-contrast:active,
+  .edit__item--disabled .edit__icon-editor-fill:active {}
+}
+
+@media (min-width: @desk-width) {
+  .edit {
+    flex-direction: column;
+    width: 410px;
+    margin-left: 90px;
+  }
+
+  .edit__item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    margin: 0;
+    height: 53px;
+    min-height: auto;
+    margin-bottom: 19px;
+  }
+
+  .edit__icon-editor-crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .edit__icon-editor-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .edit__icon-editor-contrast {
+    width: 50px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,216 @@
+.photo-day {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.photo-day::before {
+  content: "панорама дня";
+  color: #ffffff;
+  display: block;
+  width: 140px;
+  height: 27px;
+  position: absolute;
+  top: 0;
+  right: 22px;
+  background-color: #d22856;
+  padding-top: 9px;
+}
+
+.photo-day__link {
+  display: block;
+}
+
+.photo-day__img {
+  width: 100vw;
+  display: block;
+}
+
+.photo-day__description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 20px;
+  background-color: #f2f2f2;
+  padding-left: 18px;
+  padding-top: 18px;
+}
+
+.photo-day__author {
+  margin-bottom: 3px;
+}
+
+.photo-day__name {
+  font-family: @bold;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.photo-day__time {
+  color: #283645;
+  font-family: @light;
+}
+
+.photo-day__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 11px 0 0;
+}
+
+.photo-day__like {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 21px;
+}
+
+.photo-day__like-link {
+  width: 13px;
+  height: 12px;
+  background: url("../img/icon-heart.svg") no-repeat top left;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.photo-day__like-text {
+  font-size: 12px;
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #d22856;
+  text-transform: uppercase;
+  margin-left: 16px;
+}
+
+.photo-day__like-number {
+  font-size: 12px;
+  font-family: @norm;
+  color: #d22856;
+  margin-left: 5px;
+}
+
+@media (min-width: @tab-width) {
+  .photo-day {
+    width: 100%;
+    margin-bottom: 50px;
+    background: 0 0;
+    padding: 0;
+  }
+
+  .photo-day::before {
+    content: "панорама дня";
+    font-family: "OpenSansBold", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    width: 140px;
+    height: 28px;
+    padding-top: 8px;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    background-color: #d22856;
+  }
+
+  .photo-day__description {
+    margin: 0 20px;
+    padding-top: 21px;
+    padding-left: 30px;
+    display: block;
+    padding-bottom: 25px;
+    background: #f2f2f2;
+    position: relative;
+  }
+
+  .photo-day__author {
+    width: 30%;
+    margin-bottom: 0px;
+  }
+
+  .photo-day__text {
+    order: 3;
+    width: 100%;
+  }
+
+  .photo-day__like {
+    order: 2;
+    right: 11px;
+    top: 16px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
+
+  .photo-day__like-link {
+    order: 3;
+    display: block;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: -2px;
+    display: block;
+  }
+
+  .photo-day__like-text {
+    order: 1;
+  }
+
+  .photo-day__like-number {
+    order: 2;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .photo-day {
+    width: 100%;
+    margin: 0 0 50px;
+  }
+
+  .photo-day::before {
+    content: "панорама дня";
+    font-family: @bold;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    width: 140px;
+    height: 28px;
+    padding-top: 8px;
+    position: absolute;
+    top: 54px;
+    right: 50%;
+    margin-right: -470px;
+    background-color: #d22856;
+    text-transform: uppercase;
+  }
+
+  .photo-day__img {
+    width: 100%;
+    display: block;
+  }
+
+  .photo-day__description {
+    width: 886px;
+    margin: 0 auto;
+    padding: 24px 27px 23px 26px;
+  }
+
+  .photo-day__author {
+    width: auto;
+  }
+
+  .photo-day__like {
+    margin-left: 610px;
+    padding-left: 0;
+    height: 17px;
+    top: 18px;
+  }
+
+  .photo-day__time {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .photo-day__like-link {
+    margin-top: 2px;
+  }
+}

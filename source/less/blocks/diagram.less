@@ -1,0 +1,175 @@
+.diagram {
+  display: none;
+}
+
+@media (min-width: @tab-width) {
+  .diagram--off {
+    display: none;
+  }
+
+  .diagram {
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 48px;
+    min-height: 280px;
+    display: block;
+    padding-left: 332px;
+    padding-top: 48px;
+  }
+
+  .diagram::before {
+    content: "24";
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 240px;
+    height: 188px;
+    background-image: url("../img/timer.png");
+    background-size: cover;
+    font-family: @bold;
+    font-size: 96px;
+    color: #d22856;
+    padding-top: 90px;
+  }
+
+  .diagram::after {
+    content: "";
+    position: absolute;
+    top: 61px;
+    left: 39px;
+    width: 204px;
+    height: 204px;
+    border-radius: 50%;
+    border: 18px solid #d22856;
+    box-sizing: border-box;
+  }
+
+  .diagram__title {
+    font-family: @bold;
+    font-size: 30px;
+    color: #000000;
+    line-height: 36px;
+    width: 168px;
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+
+  .diagram__text {
+    font-family: @norm;
+    font-size: 14px;
+    line-height: 24px;
+    color: @grey;
+    margin: 0 0 12px 0;
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  .diagram__link {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    font-family: @norm;
+    width: 226px;
+    color: @purp;
+    text-decoration: underline;
+  }
+
+  .diagram__digit {
+    font-family: @bold;
+    font-size: 96px;
+    color: @purp;
+    position: absolute;
+    top: 83px;
+    left: 79px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .diagram {
+    min-height: 374px;
+    background-color: #f2f2f2;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+  .diagram__digit {
+    top: 140px;
+    left: 213px;
+  }
+
+  .diagram::before {
+    display: none;
+  }
+
+  .diagram__container {
+    position: relative;
+    width: 570px;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 370px;
+    padding-top: 122px;
+  }
+
+  .diagram__container::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 1px;
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/timer.png");
+    background-size: cover;
+  }
+
+  .diagram__title {
+    margin-left: 0;
+    width: 298px;
+    line-height: 30px;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .diagram__text {
+    margin: 0;
+    padding: 0 41px 0 0;
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .diagram__link {
+    display: block;
+    margin-left: 0;
+    width: 290px;
+    margin-top: 30px;
+    color: @purp;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .diagram::after {
+    display: none;
+  }
+
+  .diagram__container::after {
+    content: "24";
+    position: absolute;
+    top: 97px;
+    left: 24px;
+    width: 252px;
+    height: 252px;
+    border-radius: 50%;
+    border: 18px solid #D22856;
+    box-sizing: border-box;
+    font-family: "OpenSansBold";
+    font-size: 120px;
+    color: #d22856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
