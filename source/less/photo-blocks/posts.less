@@ -7,6 +7,7 @@
 
 .posts__item {
   margin-bottom: 21px;
+  position: relative;
 }
 
 .posts__description {
@@ -90,10 +91,6 @@
   display: block;
 }
 
-.posts__item {
-  position: relative;
-}
-
 .item--photo-day {
   width: 100%;
   margin: 0;
@@ -145,27 +142,18 @@
   .posts__text {
     width: 100%;
     margin: 0;
+    min-height: 57px;
   }
 
   .posts__like {
     margin-top: 0;
     margin-bottom: 0;
-    position: absolute;
     left: 0;
     width: calc(100% - 15px);
-    display: flex;
-    flex-direction: row;
     position: absolute;
-    margin-top: 0;
-    margin-bottom: 0;
-    left: 0;
     bottom: 24px;
     padding-left: 16px;
     display: block;
-  }
-
-  .posts__text {
-    min-height: 57px;
   }
 
   .posts__like1 {
@@ -175,7 +163,6 @@
     top: 16px;
     display: flex;
     flex-direction: row;
-    position: absolute;
   }
 
   .posts__text1 {
@@ -233,7 +220,6 @@
     display: block;
     padding-bottom: 25px;
     background: #f2f2f2;
-    position: relative;
   }
 }
 

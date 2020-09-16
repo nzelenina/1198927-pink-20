@@ -57,36 +57,23 @@ input[type="checkbox"]:focus + .userfiltr-form__label::before {
 }
 
 @media (min-width: @tab-width) {
-  .userfiltr-form {}
-
-  input[type="checkbox"] + .userfiltr-form__label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 22px;
-    width: 34px;
-    height: 33px;
-    background-color: #ffffff;
-    border: 2px solid @light-grey;
-  }
-
   .userfiltr-form__container {
     margin-top: 0;
   }
 
-  input[type=checkbox]:checked + .userfiltr-form__label::before {
+  input[type="checkbox"]:checked + .userfiltr-form__label::before {
     content: "";
     position: absolute;
     top: -5px;
     left: 58px;
     width: 35px;
     height: 35px;
-    background-image: url(../img/tick.png);
+    background-image: url("../img/tick.png");
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  input[type=checkbox] + .userfiltr-form__label::before {
+  input[type="checkbox"] + .userfiltr-form__label::before {
     content: "";
     position: absolute;
     top: -5px;

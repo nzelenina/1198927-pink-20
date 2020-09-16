@@ -5,7 +5,7 @@
   display: inline-flex;
   left: 50%;
   transition: all 2s;
-  margin-left: calc(-1 * (100vw - 40px)/2);
+  margin-left: calc(-1 * (100vw - 40px) / 2);
   padding-right: 411px;
 }
 
@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.tariff__item--hit:before {
+.tariff__item--hit::before {
   content: "";
   position: absolute;
   top: 0;
@@ -43,7 +43,7 @@
   background-repeat: no-repeat;
 }
 
-.tariff__item--hit:after {
+.tariff__item--hit::after {
   content: "хит";
   color: #ffffff;
   transform: rotate(-45deg);
